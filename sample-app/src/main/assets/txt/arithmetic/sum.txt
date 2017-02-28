@@ -1,0 +1,17 @@
+MathObservable
+.sumInteger(
+ Observable.just(11, 2, 3, 4, 5))
+ .subscribe(new Subscriber<Integer>() {
+ @Override
+ public void onNext(Integer v) {
+  println( "onNext:." + v);
+ }
+ @Override
+ public void onCompleted() {
+  println("onCompleted:");
+ }
+ @Override
+ public void onError(Throwable e) {
+  println("onError:");
+ }
+});

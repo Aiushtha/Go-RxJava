@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Hello SyntaxHighlighter</title>
+    <link href="prettify.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="prettify.js"></script>
+<script src="jquery-1.12.3.min.js"></script>
+<link href="../../rtf/txt.css" type="text/css" rel="stylesheet"/>
+</head>
+<body style="background: white; font-family: Helvetica">
+<h3 id="title" align = center>ToList操作作符</h3>
+<h4>作用:</h4>
+<h5>
+    toList：发射多项数据的Observable会为每一项数据调用onNext方法，
+    用toList操作符让Observable将多项数据组合成一个List，然后调用一次onNext方法传递整个列表。
+    如果原始Observable没有发射任何数据就调用了onCompleted，
+    toList返回的Observable会在调用onCompleted之前发射一个空列表。
+    如果原始Observable调用了onError，toList返回的Observable会立即调用它的观察者的onError方法
+</h5>
+<h4>要点:</h4>
+<h5>
+</h5>
+<h4>注意:</h4>
+<h5>
+</h5>
+</body>
+</html>

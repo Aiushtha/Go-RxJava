@@ -1,0 +1,15 @@
+将Observable转换为另一个对象或数据结构。
+ 它们中的一些会阻塞直到Observable终止，
+ 然后生成一个等价的对象或数据结构；
+ 另一些返回一个发射那个对象或数据结构的Observable。
+ 简而言之就是，
+ 将原始Observable转化为一个发射另一个对象或者数据结构的Observable，
+ 如果原Observable发射完他的数据需要一段时间，
+ 使用To操作符得到的Observable将阻塞等待原Observable发射完后再将数据序列打包后发射出去。
+RxJava中实现了如下几种To操作符：
+ toList
+ toMap
+ toMultiMap
+ toSortedList
+ toFuture
+ toIterable

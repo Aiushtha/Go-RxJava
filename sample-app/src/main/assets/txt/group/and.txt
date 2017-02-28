@@ -1,0 +1,26 @@
+Observable obs1 = Observable.interval(1, TimeUnit.SECONDS);
+  Observable obs2 = Observable.range(0,3);
+  Plan0 plan0 = JoinObservable.from(obs1).and(obs2).then(new Func2() {
+    @Override
+  public Object call(Object o1, Object o2) {
+    return o2;
+  }
+  });
+JoinObservable.when(plan0).toObservable()
+  .observeOn(AndroidSchedulers.mainThread())
+  subscribe(new Observer<Integer>() {
+     @Override
+   public void onCompleted() {
+     println("onCompleted");
+   }
+
+  @Override
+  public void onError(Throwable e) {
+     println("onError");
+  }
+
+  @Override
+  public void onNext(Integer integer) {
+     println("onNext:"+integer);
+  }
+});

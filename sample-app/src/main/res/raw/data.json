@@ -1,0 +1,1071 @@
+[
+
+  {
+    "type": 1,
+    "treeDepth": 1,
+    "text": "测试",
+    "clazz": "rx.android.samples.demo.Fragment_FlatMap",
+    "link": "",
+    "explain": "file:///android_asset/explain/create.html",
+    "children": [],
+    "type": 0,
+    "treeDepth": 0,
+    "text": "RxJava常用操作符示例(基础篇)",
+    "children": [
+      {
+        "type": 0,
+        "treeDepth": 1,
+        "text": "创建操作符",
+        "children": [
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Create操作符",
+            "clazz": "rx.android.samples.demo.create.Fragment_Create",
+            "link": "txt/create/create.txt",
+            "explain": "file:///android_asset/explain/create/create.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Defer操作符",
+            "clazz": "rx.android.samples.demo.create.Fragment_Defer",
+            "link": "txt/create/defer.txt",
+            "explain": "file:///android_asset/explain/create/defer.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Empty/Never/Throw操作符",
+            "clazz": "rx.android.samples.demo.create.Fragment_Empty_Nerver_Throw",
+            "link": "txt/empty_never_throw.txt",
+            "explain": "file:///android_asset/explain/create/empty_never_throw.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "From操作符",
+            "clazz": "rx.android.samples.demo.create.Fragment_From",
+            "link": "txt/create/from.txt",
+            "explain": "file:///android_asset/explain/create/from.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Interval操作符",
+            "clazz": "rx.android.samples.demo.create.Fragment_Interval",
+            "link": "txt/create/interval.txt",
+            "explain": "file:///android_asset/explain/create/interval.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Just操作符",
+            "clazz": "rx.android.samples.demo.create.Fragment_Just",
+            "link": "txt/create/just.txt",
+            "explain": "file:///android_asset/explain/create/just.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Range操作符",
+            "clazz": "rx.android.samples.demo.create.Fragment_Range",
+            "link": "txt/create/range.txt",
+            "explain": "file:///android_asset/explain/create/range.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Repeat操作符",
+            "clazz": "rx.android.samples.demo.create.Fragment_Repeat",
+            "link": "txt/create/repeat.txt",
+            "explain": "file:///android_asset/explain/create/repeat.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Start操作符",
+            "clazz": "rx.android.samples.demo.create.Fragment_Start",
+            "link": "txt/create/start.txt",
+            "explain": "file:///android_asset/explain/create/start.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Timer操作符",
+            "clazz": "rx.android.samples.demo.create.Fragment_Timer",
+            "link": "txt/create/timer.txt",
+            "explain": "file:///android_asset/explain/create/timer.html",
+            "children": []
+          }
+        ]
+      },
+      {
+        "type": 0,
+        "treeDepth": 1,
+        "text": "变换操作符",
+        "children": [
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Buffer操作符",
+            "clazz": "rx.android.samples.demo.change.Fragment_Buffer",
+            "link": "txt/change/buffer.txt",
+            "explain": "file:///android_asset/explain/change/buffer.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Map操作符",
+            "clazz": "rx.android.samples.demo.change.Fragment_Map",
+            "link": "txt/change/map.txt",
+            "explain": "file:///android_asset/explain/change/map.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "flatmap操作符",
+            "clazz": "rx.android.samples.demo.change.Fragment_FlatMap",
+            "link": "txt/change/flatmap.txt",
+            "explain": "file:///android_asset/explain/change/flatmap.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "flatmap和map的区别",
+            "clazz": "rx.android.samples.demo.change.Fragment_FlatMapVSMap",
+            "link": "txt/change/flatmap_map.txt",
+            "explain": "file:///android_asset/explain/change/flatmap_map.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "GroupBy操作符",
+            "clazz": "rx.android.samples.demo.change.Fragment_GroupBy",
+            "link": "txt/change/groupby.txt",
+            "explain": "file:///android_asset/explain/groupby.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Scan操作符",
+            "clazz": "rx.android.samples.demo.change.Fragment_Scan",
+            "link": "txt/change/scan.txt",
+            "explain": "file:///android_asset/explain/change/scan.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Window操作符",
+            "clazz": "rx.android.samples.demo.change.Fragment_Window",
+            "link": "txt/change/window.txt",
+            "explain": "file:///android_asset/explain/change/window.html",
+            "children": []
+          }
+        ]
+      },
+      {
+        "type": 0,
+        "treeDepth": 1,
+        "text": "过滤操作符",
+        "children": [
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Debounce操作符",
+            "clazz": "rx.android.samples.demo.filter.Fragment_Debounce",
+            "link": "txt/filter/debounce.txt",
+            "explain": "file:///android_asset/explain/filter/debounce.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Distinct操作符",
+            "clazz": "rx.android.samples.demo.filter.Fragment_Distinct",
+            "link": "txt/filter/distinct.txt",
+            "explain": "file:///android_asset/explain/filter/distinct.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "DistinctUtilChanged操作符",
+            "clazz": "rx.android.samples.demo.filter.Fragment_DistinctUtilChanged",
+            "link": "txt/filter/distinct.txt",
+            "explain": "file:///android_asset/explain/filter/distinctutilchanged.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "ElementAt操作符",
+            "clazz": "rx.android.samples.demo.filter.Fragment_ElementAt",
+            "link": "txt/filter/elementat.txt",
+            "explain": "file:///android_asset/explain/filter/elementat.html",
+            "children": []
+          },
+
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "filter操作符",
+            "clazz": "rx.android.samples.demo.filter.Fragment_Filter",
+            "link": "txt/filter/filter.txt",
+            "explain": "file:///android_asset/explain/filter/create.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Frist操作符",
+            "clazz": "rx.android.samples.demo.filter.Fragment_Frist",
+            "link": "txt/filter/frist.txt",
+            "explain": "file:///android_asset/explain/filter/frist.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "IgnoreElements操作符",
+            "clazz": "rx.android.samples.demo.filter.Fragment_IgnoreElements",
+            "link": "txt/filter/ignoreelements.txt",
+            "explain": "file:///android_asset/explain/filter/ignoreelements.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Last操作符",
+            "clazz": "rx.android.samples.demo.filter.Fragment_Last",
+            "link": "txt/filter/last.txt",
+            "explain": "file:///android_asset/explain/filter/last.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Sample操作符",
+            "clazz": "rx.android.samples.demo.filter.Fragment_Sample",
+            "link": "txt/filter/sample.txt",
+            "explain": "file:///android_asset/explain/filter/sample.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Skip操作符",
+            "clazz": "rx.android.samples.demo.filter.Fragment_Skip",
+            "link": "txt/filter/skip.txt",
+            "explain": "file:///android_asset/explain/filter/skip.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "SkipLast操作符",
+            "clazz": "rx.android.samples.demo.filter.Fragment_SkipLast",
+            "link": "txt/filter/skiplast.txt",
+            "explain": "file:///android_asset/explain/filter/skiplast.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Take操作符",
+            "clazz": "rx.android.samples.demo.filter.Fragment_Take",
+            "link": "txt/filter/task.txt",
+            "explain": "file:///android_asset/explain/filter/task.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "TaskLast操作符",
+            "clazz": "rx.android.samples.demo.filter.Fragment_TakeLast",
+            "link": "txt/filter/takelast.txt",
+            "explain": "file:///android_asset/explain/filter/takelast.html",
+            "children": []
+          }
+        ]
+      },
+      {
+        "type": 0,
+        "treeDepth": 1,
+        "text": "组合操作符",
+        "children": [
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "And/Then/Where操作符",
+            "clazz": "rx.android.samples.demo.group.Fragment_And_Then_Where",
+            "link": "txt/group/and.txt",
+            "explain": "file:///android_asset/explain/group/and.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "CombineLatest操作符",
+            "clazz": "rx.android.samples.demo.group.Fragment_CombineLatest",
+            "link": "txt/group/combinelatest.txt",
+            "explain": "file:///android_asset/explain/group/combinelatest.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Join操作符",
+            "clazz": "rx.android.samples.demo.group.Fragment_Join",
+            "link": "txt/group/join.txt",
+            "explain": "file:///android_asset/explain/group/join.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Merge操作符",
+            "clazz": "rx.android.samples.demo.group.Fragment_Merge",
+            "link": "txt/group/merge.txt",
+            "explain": "file:///android_asset/explain/group/merge.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "StartWith操作符",
+            "clazz": "rx.android.samples.demo.group.Fragment_StartWith",
+            "link": "txt/group/startwith.txt",
+            "explain": "file:///android_asset/explain/group/create.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Switch操作符",
+            "clazz": "rx.android.samples.demo.group.Fragment_Switch",
+            "link": "txt/group/switch.txt",
+            "explain": "file:///android_asset/explain/group/switch.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Zip操作符",
+            "clazz": "rx.android.samples.demo.group.Fragment_Zip",
+            "link": "txt/group/zip.txt",
+            "explain": "file:///android_asset/explain/group/zip.html",
+            "children": []
+          }
+        ]
+      },
+      {
+        "type": 0,
+        "treeDepth": 1,
+        "text": "错误处理",
+        "children": [
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Catch操作符",
+            "clazz": "rx.android.samples.demo.error.Fragment_Catch",
+            "link": "txt/error/catch.txt",
+            "explain": "file:///android_asset/explain/error/catch.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Catch操作符-OnErrorResumeNext",
+            "clazz": "rx.android.samples.demo.error.Fragment_Catch_OnErrorResumeNext",
+            "link": "txt/error/catch_onerrorresumenext.txt",
+            "explain": "file:///android_asset/explain/error/catch_onerrorresumenext.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Catch操作符-OnErrorReturn",
+            "clazz": "rx.android.samples.demo.error.Fragment_Catch_OnErrorReturn",
+            "link": "txt/error/catch_onerrorreturn.txt",
+            "explain": "file:///android_asset/explain/error/catch_onerrorreturn.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Catch操作符-OnExceptionResumeNext",
+            "clazz": "rx.android.samples.demo.error.Fragment_Catch_OnExceptionResumeNext",
+            "link": "txt/error/catch_onexceptionresumenext.txt",
+            "explain": "file:///android_asset/explain/error/catch_onexceptionresumenext.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Retry操作符",
+            "clazz": "rx.android.samples.demo.error.Fragment_Retry",
+            "link": "txt/error/retry.txt",
+            "explain": "file:///android_asset/explain/error/retry.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Retry操作符-参数long",
+            "clazz": "rx.android.samples.demo.error.Fragment_Retry_Long",
+            "link": "txt/error/retry_long.txt",
+            "explain": "file:///android_asset/explain/error/retry_long.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Retry操作符-Func",
+            "clazz": "rx.android.samples.demo.error.Fragment_Retry_Func",
+            "link": "txt/error/retry_func.txt",
+            "explain": "file:///android_asset/explain/error/retry_func.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Retry操作符-RetryWhen",
+            "clazz": "rx.android.samples.demo.error.Fragment_RetryWhen",
+            "link": "txt/error/retrywhen.txt",
+            "explain": "file:///android_asset/explain/error/retrywhen.html",
+            "children": []
+          }
+        ]
+      },
+      {
+        "type": 0,
+        "treeDepth": 1,
+        "text": "辅助操作",
+        "children": [
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Delay操作符",
+            "clazz": "rx.android.samples.demo.assist.Fragment_Delay",
+            "link": "txt/assist/delay.txt",
+            "explain": "file:///android_asset/explain/assist/delay.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "DelaySubscription操作符",
+            "clazz": "rx.android.samples.demo.assist.Fragment_DelaySubscription",
+            "link": "txt/assist/delaysubscription.txt",
+            "explain": "file:///android_asset/explain/assist/delaysubscription.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Dematerizlize操作符",
+            "clazz": "rx.android.samples.demo.assist.Fragment_Dematerizlize_Materizlize",
+            "link": "txt/assist/dematerizlize_materizlize.txt",
+            "explain": "file:///android_asset/explain/assist/dematerizlize_materizlize.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Do操作符",
+            "clazz": "rx.android.samples.demo.assist.Fragment_Do",
+            "link": "txt/assist/do.txt",
+            "explain": "file:///android_asset/explain/assist/do.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "DoEach操作符",
+            "clazz": "rx.android.samples.demo.assist.Fragment_DoEach",
+            "link": "txt/assist/doeach.txt",
+            "explain": "file:///android_asset/explain/assist/doeach.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "DoOnComplete操作符",
+            "clazz": "rx.android.samples.demo.assist.Fragment_DoOnComplete",
+            "link": "txt/assist/dooncomplete.txt",
+            "explain": "file:///android_asset/explain/assist/dooncomplete.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "DoOnError操作符",
+            "clazz": "rx.android.samples.demo.assist.Fragment_DoOnError",
+            "link": "txt/assist/doonerror.txt",
+            "explain": "file:///android_asset/explain/assist/doonerror.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "DoOnNext操作符",
+            "clazz": "rx.android.samples.demo.assist.Fragment_DoOnNext",
+            "link": "txt/assist/doonnext.txt",
+            "explain": "file:///android_asset/explain/assist/doonnext.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "DoOnTerminate操作符",
+            "clazz": "rx.android.samples.demo.assist.Fragment_DoOnTerminate",
+            "link": "txt/assist/doonterminate.txt",
+            "explain": "file:///android_asset/explain/assist/doonterminate.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "DoOnSubscribe操作符",
+            "clazz": "rx.android.samples.demo.assist.Fragment_DoOnSubscribe",
+            "link": "txt/assist/doonsubscribe.txt",
+            "explain": "file:///android_asset/explain/assist/doonsubscribe.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "DoOnUnSubscribe操作符",
+            "clazz": "rx.android.samples.demo.assist.Fragment_DoOnUnSubscribe",
+            "link": "txt/assist/doonunsubscribe.txt",
+            "explain": "file:///android_asset/explain/assist/doonunsubscribe.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "ObserveOn操作符",
+            "clazz": "rx.android.samples.demo.assist.Fragment_ObserveOn",
+            "link": "txt/assist/observeon.txt",
+            "explain": "file:///android_asset/explain/assist/observeon.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Serialize操作符",
+            "clazz": "rx.android.samples.demo.assist.Fragment_Serialize",
+            "link": "txt/assist/serialize.txt",
+            "explain": "file:///android_asset/explain/assist/serialize.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Subscribe操作符",
+            "clazz": "rx.android.samples.demo.assist.Fragment_Subscribe",
+            "link": "txt/assist/subscribe.txt",
+            "explain": "file:///android_asset/explain/assist/subscribe.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "SubscribeOn操作符",
+            "clazz": "rx.android.samples.demo.assist.Fragment_SubscribeOn",
+            "link": "txt/assist/subscribeon.txt",
+            "explain": "file:///android_asset/explain/assist/subscribeon.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "TimeInterval操作符",
+            "clazz": "rx.android.samples.demo.assist.Fragment_TimeInterval",
+            "link": "txt/assist/timeinterval.txt",
+            "explain": "file:///android_asset/explain/assist/timeinterval.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "TimeOut操作符",
+            "clazz": "rx.android.samples.demo.assist.Fragment_TimeOut",
+            "link": "txt/assist/timeout.txt",
+            "explain": "file:///android_asset/explain/assist/timeout.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Timestamp操作符",
+            "clazz": "rx.android.samples.demo.assist.Fragment_Timestamp",
+            "link": "txt/assist/timestamp.txt",
+            "explain": "file:///android_asset/explain/assist/timestamp.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Using操作符",
+            "clazz": "rx.android.samples.demo.assist.Fragment_Using",
+            "link": "txt/assist/using.txt",
+            "explain": "file:///android_asset/explain/assist/using.html",
+            "children": []
+          }
+        ]
+      },
+      {
+        "type": 0,
+        "treeDepth": 1,
+        "text": "条件布尔操作",
+        "children": [
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "All操作符",
+            "clazz": "rx.android.samples.demo.condition.Fragment_All",
+            "link": "txt/condition/all.txt",
+            "explain": "file:///android_asset/explain/condition/create.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Amb操作符",
+            "clazz": "rx.android.samples.demo.condition.Fragment_Amb",
+            "link": "txt/condition/amb.txt",
+            "explain": "file:///android_asset/explain/condition/amb.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Contains操作符",
+            "clazz": "rx.android.samples.demo.condition.Fragment_Contains",
+            "link": "txt/condition/contains.txt",
+            "explain": "file:///android_asset/explain/condition/contains.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "DefaultEmpty操作符",
+            "clazz": "rx.android.samples.demo.condition.Fragment_DefaultEmpty",
+            "link": "txt/condition/defaultempty.txt",
+            "explain": "file:///android_asset/explain/condition/defaultempty.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "SequenceEqual操作符",
+            "clazz": "rx.android.samples.demo.condition.Fragment_SequenceEqual",
+            "link": "txt/condition/sequenceequal.txt",
+            "explain": "file:///android_asset/explain/condition/sequenceequal.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "SkipUntil操作符",
+            "clazz": "rx.android.samples.demo.condition.Fragment_SkipUntil",
+            "link": "txt/condition/skipuntil.txt",
+            "explain": "file:///android_asset/explain/condition/skipuntil.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "SkipWhile操作符",
+            "clazz": "rx.android.samples.demo.condition.Fragment_SkipWhile",
+            "link": "txt/condition/skipwhile.txt",
+            "explain": "file:///android_asset/explain/condition/skipwhile.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "TakeUtil操作符",
+            "clazz": "rx.android.samples.demo.condition.Fragment_TakeUntil",
+            "link": "txt/condition/takeutil.txt",
+            "explain": "file:///android_asset/explain/condition/taskutil.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "TakeWhile操作符",
+            "clazz": "rx.android.samples.demo.condition.Fragment_TakeWhile",
+            "link": "txt/condition/takewhile.txt",
+            "explain": "file:///android_asset/explain/condition/create.html",
+            "children": []
+          }
+        ]
+      },
+      {
+        "type": 0,
+        "treeDepth": 1,
+        "text": "算术和集合操作符",
+        "link": "",
+        "explain": "file:///android_asset/explain/create.html",
+        "children": [
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Average操作符",
+            "clazz": "rx.android.samples.demo.arithmetic.Fragment_Average",
+            "link": "txt/arithmetic/average.txt",
+            "explain": "file:///android_asset/explain/arithmetic/average.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Concat操作符",
+            "clazz": "rx.android.samples.demo.arithmetic.Fragment_Concat",
+            "link": "txt/arithmetic/concat.txt",
+            "explain": "file:///android_asset/explain/arithmetic/concat.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Count操作符",
+            "clazz": "rx.android.samples.demo.arithmetic.Fragment_Count",
+            "link": "txt/arithmetic/count.txt",
+            "explain": "file:///android_asset/explain/arithmetic/count.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Max操作符",
+            "clazz": "rx.android.samples.demo.arithmetic.Fragment_Max",
+            "link": "txt/arithmetic/max.txt",
+            "explain": "file:///android_asset/explain/arithmetic/max.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Min操作符",
+            "clazz": "rx.android.samples.demo.arithmetic.Fragment_Min",
+            "link": "txt/arithmetic/min.txt",
+            "explain": "file:///android_asset/explain/arithmetic/min.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Reduce操作符",
+            "clazz": "rx.android.samples.demo.arithmetic.Fragment_Reduce",
+            "link": "txt/arithmetic/reduce.txt",
+            "explain": "file:///android_asset/explain/arithmetic/reduce.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Sum操作符",
+            "clazz": "rx.android.samples.demo.arithmetic.Fragment_Sum",
+            "link": "txt/arithmetic/sum.txt",
+            "explain": "file:///android_asset/explain/arithmetic/sum.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Collect操作符",
+            "clazz": "rx.android.samples.demo.arithmetic.Fragment_collect",
+            "link": "txt/arithmetic/collect.txt",
+            "explain": "file:///android_asset/explain/arithmetic/collect.html",
+            "children": []
+          }
+        ]
+      },
+      {
+        "type": 0,
+        "treeDepth": 1,
+        "text": "转换操作符",
+        "link": "",
+        "explain": "file:///android_asset/explain/create.html",
+        "children": [
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "To操作符",
+            "clazz": "rx.android.samples.demo.convert.Fragment_To",
+            "link": "txt/convert/to.txt",
+            "explain": "file:///android_asset/explain/convert/to.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "ToFuture操作符",
+            "clazz": "rx.android.samples.demo.convert.Fragment_ToFuture",
+            "link": "txt/convert/tofuture.txt",
+            "explain": "file:///android_asset/explain/convert/tofuture.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "ToIterable操作符",
+            "clazz": "rx.android.samples.demo.convert.Fragment_ToIterable",
+            "link": "txt/convert/toiterable.txt",
+            "explain": "file:///android_asset/explain/convert/toiterable.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "ToList操作符",
+            "clazz": "rx.android.samples.demo.convert.Fragment_ToList",
+            "link": "txt/convert/tolist.txt",
+            "explain": "file:///android_asset/explain/convert/tolist.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "ToMap操作符",
+            "clazz": "rx.android.samples.demo.convert.Fragment_ToMap",
+            "link": "txt/convert/tomap.txt",
+            "explain": "file:///android_asset/explain/convert/tomap.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "ToMultiMap操作符",
+            "clazz": "rx.android.samples.demo.convert.Fragment_ToMultiMap",
+            "link": "txt/convert/tomultimap.txt",
+            "explain": "file:///android_asset/explain/convert/tomultimap.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "ToSortedList操作符",
+            "clazz": "rx.android.samples.demo.convert.Fragment_ToSortedList",
+            "link": "txt/convert/tosortedlist.txt",
+            "explain": "file:///android_asset/explain/convert/tosortedlist.html",
+            "children": []
+          }
+        ]
+      },
+      {
+        "type": 0,
+        "treeDepth": 1,
+        "text": "连接操作符",
+        "link": "",
+        "explain": "file:///android_asset/explain/create.html",
+        "children": [
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Connect操作符",
+            "clazz": "rx.android.samples.demo.connect.Fragment_Connect",
+            "link": "txt/connect/connect.txt",
+            "explain": "file:///android_asset/explain/connect/connect.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Publish操作符",
+            "clazz": "rx.android.samples.demo.connect.Fragment_Publish",
+            "link": "txt/connect/publish.txt",
+            "explain": "file:///android_asset/explain/connect/publish.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "RefCount操作符",
+            "clazz": "rx.android.samples.demo.connect.Fragment_RefCount",
+            "link": "txt/connect/refCount.txt",
+            "explain": "file:///android_asset/explain/connect/refcount.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "Refplay操作符",
+            "clazz": "rx.android.samples.demo.connect.Fragment_Refplay",
+            "link": "txt/connect/refplay.txt",
+            "explain": "file:///android_asset/explain/connect/refplay.html",
+            "children": []
+          }
+        ]
+      },
+      {
+        "type": 0,
+        "treeDepth": 1,
+        "text": "反压操作符",
+        "link": "",
+        "explain": "file:///android_asset/explain/create.html",
+        "children": [
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "OnBackpressureBuffer操作符",
+            "clazz": "rx.android.samples.demo.backpressure.Fragment_OnBackpressureBuffer",
+            "link": "txt/backpressure/onbackpressurebuffer.txt",
+            "explain": "file:///android_asset/explain/backpressure/refCount.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "OnBackpressureDrop操作符",
+            "clazz": "rx.android.samples.demo.backpressure.Fragment_OnBackpressureDrop",
+            "link": "txt/backpressure/onbackpressuredrop.txt",
+            "explain": "file:///android_asset/explain/backpressure/onbackpressuredrop.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
+            "text": "OnBackpressureBuffer操作符",
+            "clazz": "rx.android.samples.demo.backpressure.Fragment_OnBackPressureLatest",
+            "link": "txt/backpressure/onbackPressurelatest.txt",
+            "explain": "file:///android_asset/explain/backpressure/onbackPressurelatest.html",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "treeDepth": 0,
+    "text": "RxJava常用技巧与原理(练习篇)",
+    "children": [
+      {
+        "type": 1,
+        "treeDepth": 2,
+        "text": "Debounce 防触摸原理",
+        "clazz": "rx.android.samples.demo.skill.Fragment_DebounceOnClick",
+        "link": "txt/skill/onclick.txt",
+        "explain": "file:///android_asset/explain/skill/onclick.html",
+        "children": []
+      },
+      {
+        "type": 1,
+        "treeDepth": 2,
+        "text": "Debounce 搜索框防触发原理",
+        "clazz": "rx.android.samples.demo.skill.Fragment_DebounceOnEditText",
+        "link": "txt/skill/edittext.txt",
+        "explain": "file:///android_asset/explain/skill/edittext.html",
+        "children": []
+      },
+      {
+        "type": 1,
+        "treeDepth": 2,
+        "text": "OKHttp请求简单示例",
+        "clazz": "rx.android.samples.demo.skill.Fragment_Okhttp",
+        "link": "txt/skill/okhttp.txt",
+        "explain": "file:///android_asset/explain/skill/okhttp.html",
+        "children": []
+      },
+      {
+        "type": 1,
+        "treeDepth": 2,
+        "text": "封装重试工具",
+        "clazz": "rx.android.samples.demo.skill.Fragment_RetryWhen",
+        "link": "txt/skill/retrywhen.txt",
+        "explain": "file:///android_asset/explain/skill/retrywhen.html",
+        "children": []
+      },
+      {
+        "type": 1,
+        "treeDepth": 2,
+        "text": "编写一个三级缓存的示例",
+        "clazz": "rx.android.samples.demo.skill.Fragment_CacheDemo",
+        "link": "txt/skill/cache.txt",
+        "explain": "file:///android_asset/explain/skill/cache.html",
+        "children": []
+      },
+      {
+        "type": 1,
+        "treeDepth": 2,
+        "text": "线程切换与类型切换",
+        "clazz": "rx.android.samples.demo.skill.Fragment_ThreadChange",
+        "link": "txt/skill/thread_change.txt",
+        "explain": "file:///android_asset/explain/skill/thread_change.html",
+        "children": []
+      },
+      {
+        "type": 1,
+        "treeDepth": 2,
+        "text": "多输入单输出",
+        "clazz": "rx.android.samples.demo.skill.Fragment_Merge",
+        "link": "txt/skill/merge.txt",
+        "explain": "file:///android_asset/explain/skill/merge.html",
+        "children": []
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "treeDepth": 0,
+    "text": "RxJava工具(开源项目)",
+    "children": [
+      {
+        "type": 1,
+        "treeDepth": 1,
+        "text": "RxBinding防止触摸",
+        "clazz": "rx.android.samples.demo.library.RxBinding_StableClick",
+        "link": "",
+        "explain": "file:///android_asset/explain/create.html",
+        "children": []
+      },
+      {
+        "type": 1,
+        "treeDepth": 1,
+        "text": "RxBinding搜索框",
+        "clazz": "rx.android.samples.demo.library.RxBinding_StableSearch",
+        "link": "",
+        "explain": "file:///android_asset/explain/create.html",
+        "children": []
+      },
+      {
+        "type": 1,
+        "treeDepth": 1,
+        "text": "RxBinding_Rxlifecycle计时器绑定生命周期",
+        "clazz": "rx.android.samples.demo.library.RxBinding_Rxlifecycle",
+        "link": "txt/project/debounce.txt",
+        "explain": "file:///android_asset/explain/project/rxlifecycle.html",
+        "children": []
+      }
+    ]
+  },
+  {
+  "type": 1,
+  "treeDepth": 2,
+  "text": "分享",
+  "clazz": "rx.android.samples.demo.create.Fragment_Create",
+  "link": "txt/create/create.txt",
+  "explain": "https://www.gitbook.com/book/mcxiaoke/rxdocs/details",
+  "children": []
+  }
+]

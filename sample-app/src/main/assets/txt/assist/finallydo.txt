@@ -1,0 +1,21 @@
+Observable observable = Observable.empty().finallyDo(new Action0() {
+ @Override
+ public void call() {
+  println("already terminate");
+ }
+});
+observable.subscribe(new Action1() {
+ @Override
+ public void call(Object o) {
+ }
+}, new Action1<Throwable>() {
+@Override
+public void call(Throwable throwable) {
+ println("throwable!");
+}
+}, new Action0() {
+ @Override
+ public void call() {
+  println("Complete!");
+}
+});

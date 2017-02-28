@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Hello SyntaxHighlighter</title>
+    <link href="prettify.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="prettify.js"></script>
+    <script src="jquery-1.12.3.min.js"></script>
+    <link href="../../rtf/txt.css" type="text/css" rel="stylesheet"/>
+</head>
+<body style="background: white; font-family: Helvetica">
+<h3 id="title" align = center>Interval作符</h3>
+<h4>作用:</h4>
+<h5>
+    Activity/Fragment需继承RxAppCompatActivity/RxFragment，
+    目前支持的有RxAppCompatActivity、RxFragment、RxDialogFragment、RxFragmentActivity。
+    一、bindToLifecycle()方法
+    在子类使用Observable中的compose操作符，调用，
+    完成Observable发布的事件和当前的组件绑定，实现生命周期同步。
+    从而实现当前组件生命周期结束时，自动取消对Observable订阅。
+
+    二、bindUntilEvent() 方法
+    使用ActivityEvent类，其中的CREATE、START、 RESUME、PAUSE、STOP、 DESTROY分别对应生命周期内的方法。使用bindUntilEvent指定在哪个生命周期方法调用时取消订阅。
+</h5>
+<h4>要点:</h4>
+<h5>
+</h5>
+<h4>注意:</h4>
+<h5>
+    github链接:https://github.com/trello/RxLifecycle
+    参考:http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/1122/3711.html
+</h5>
+</body>
+</html>

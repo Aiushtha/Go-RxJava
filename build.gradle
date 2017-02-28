@@ -1,0 +1,22 @@
+subprojects {
+    buildscript {
+        repositories {
+            mavenCentral()
+            jcenter()
+        }
+        dependencies {
+            classpath 'com.android.tools.build:gradle:2.2.0'
+        }
+    }
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+ext {
+    minSdkVersion = 9
+    compileSdkVersion = 24
+    buildToolsVersion = '24.0.1'
+    sourceCompatibility = JavaVersion.VERSION_1_7
+}

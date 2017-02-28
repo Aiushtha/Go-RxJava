@@ -1,0 +1,31 @@
+Observable.create(new Observable.OnSubscribe<Integer>() {
+ @Override
+ public void call(Subscriber<? super Integer> subscriber) {
+  subscriber.onNext(0);
+  subscriber.onNext(1);
+  //这里报错了
+  subscriber.onError(new Throwable("do onError"));
+  subscriber.onNext(2);
+  subscriber.onNext(3);
+ }
+})
+ .onErrorReturn(new Func1<Throwable, Integer>() {
+ @Override
+ public Integer call(Throwable throwable) {
+  return -1;
+ }
+})
+.subscribe(new Observer<Object>() {
+ @Override
+ public void onCompleted() {
+  println("-------->onCompleted()");
+ }
+ @Override
+ public void onError(Throwable e) {
+  println("-------->onError()" + e);
+ }
+ @Override
+ public void onNext(Object obj) {
+  println("-------->onNext()" + obj);
+ }
+);

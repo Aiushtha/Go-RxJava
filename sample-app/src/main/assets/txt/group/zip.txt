@@ -1,0 +1,26 @@
+Observable<Integer> obs1 = 
+Observable.create(new Observable.OnSubscribe<Integer>() {
+ @Override
+ public void call(Subscriber<? super Integer> subscriber) {
+   println("1 "+Thread.currentThread().getName());
+ }
+}).subscribeOn(Schedulers.newThread())
+ .observeOn(AndroidSchedulers.mainThread());
+
+Observable<Integer> obs2 = 
+Observable.create(new Observable.OnSubscribe<Integer>() {
+ @Override
+ public void call(Subscriber<? super Integer> subscriber) {
+   println("2 "+Thread.currentThread().getName());
+ }
+}).subscribeOn(Schedulers.newThread())
+.observeOn(AndroidSchedulers.mainThread());
+Observable<Integer> obs3 = 
+Observable.create(new Observable.OnSubscribe<Integer>() {
+ @Override
+ public void call(Subscriber<? super Integer> subscriber) {
+   println("3 "+Thread.currentThread().getName());
+ }
+}).subscribeOn(Schedulers.newThread())
+.observeOn(AndroidSchedulers.mainThread());
+Observable.zip(obs1, obs2, obs3,null).subscribe();

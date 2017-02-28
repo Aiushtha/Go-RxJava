@@ -1,0 +1,15 @@
+Observable
+ .just(1, 2, 3)
+ .count()
+ .subscribe(new Subscriber<Integer>() {
+ @Override
+ public void onCompleted() {
+  println("onCompleted");
+ }
+ @Override
+ public void onError(Throwable e) {}
+ @Override
+ public void onNext(Integer integer) {
+  println("onnext:"+integer);
+ }
+});

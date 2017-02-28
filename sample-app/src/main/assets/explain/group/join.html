@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Hello SyntaxHighlighter</title>
+    <link href="prettify.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="prettify.js"></script>
+    <script src="jquery-1.12.3.min.js"></script>
+    <link href="../../rtf/txt.css" type="text/css" rel="stylesheet"/>
+</head>
+<body style="background: white; font-family: Helvetica">
+<h3 id="title" align = center>Join操作符</h3>
+<h4>作用:</h4>
+<h5>
+    无论何时，如果一个Observable发射了一个数据项，只要在另一个Observable发射的数据项定义的时间窗口内，就将两个Observable发射的数据合并发射
+    参数说明:
+    1)源Observable所要组合的目标Observable
+    2)一个函数，就收从源Observable发射来的数据，并返回一个Observable，这个Observable的生命周期决定了源Observable发射出来数据的有效期
+    3)一个函数，就收从目标Observable发射来的数据，并返回一个Observable，这个Observable的生命周期决定了目标Observable发射出来数据的有效期
+    4)一个函数，接收从源Observable和目标Observable发射来的数据，并返回最终组合完的数据。
+</h5>
+<h4>要点:</h4>
+<h5>
+
+</h5>
+<h4>注意:</h4>
+<h5>
+    作者：张磊(BaronZhang)
+    链接：https://zhuanlan.zhihu.com/p/22039934
+    来源：知乎
+    著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+    Observable：源Observable需要组合的Observable,这里我们姑且称之为目标Observable；
+    Func1：接收从源Observable发射来的数据，并返回一个Observable，
+    这个Observable的声明周期决定了源Obsrvable发射出来的数据的有效期；
+    Func1：接收目标Observable发射来的数据，并返回一个Observable，
+    这个Observable的声明周期决定了目标Obsrvable发射出来的数据的有效期；
+    Func2：接收从源Observable和目标Observable发射出来的数据，并将这两个数据组合后返回。
+    所以Join操作符的语法结构大致是这样的：onservableA.join(observableB,
+    控制observableA发射数据有效期的函数， 控制observableB发射数据有效期的函数，
+    两个observable发射数据的合并规则)
+    join操作符的效果类似于排列组合，把第一个数据源A作为基座窗口，
+    他根据自己的节奏不断发射数据元素，第二个数据源B，每发射一个数据，
+    我们都把它和第一个数据源A中已经发射的数据进行一对一匹配；举例来说，
+    如果某一时刻B发射了一个数据“B”,此时A已经发射了0，1，2，3共四个数据，那么我们的合并操作就会把“B”依次与0,1,2,3配对，得到四组数据： [0, B][1, B] [2, B] [3, B]
+
+</h5>
+</body>
+</html>

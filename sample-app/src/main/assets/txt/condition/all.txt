@@ -1,0 +1,23 @@
+Observable
+.range(0, 10)
+.all(new Func1<Integer, Boolean>() {
+ @Override
+ public Boolean call(Integer integer) {
+  println(integer);
+  if(integer<9)return true;
+   return false;
+ }
+ }).subscribe(new Observer<Boolean>() {
+ @Override
+ public void onCompleted() {
+  println("-------->onCompleted()");
+ }
+ @Override
+ public void onError(Throwable e) {
+  println("-------->onError()" + e);
+ }
+ @Override
+ public void onNext(Boolean b) {
+  println("-------->onNext()" + b);
+ }
+});

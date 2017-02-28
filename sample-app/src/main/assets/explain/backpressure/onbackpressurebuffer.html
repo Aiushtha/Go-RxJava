@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Hello SyntaxHighlighter</title>
+    <link href="prettify.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="prettify.js"></script>
+    <script src="jquery-1.12.3.min.js"></script>
+    <link href="../../rtf/txt.css" type="text/css" rel="stylesheet"/>
+</head>
+<body style="background: white; font-family: Helvetica">
+<h3 id="title" align = center>OnBackPressureBuffer操作符</h3>
+<h4>作用:</h4>
+<h5>
+    onBackpressureBuffer 会缓存所有当前无法消费的数据，直到 Observer 可以处理为止。
+    你可以指定缓冲的数量，如果缓冲满了则会导致数据流失败。
+</h5>
+<h4>要点:</h4>
+<h5>
+</h5>
+<h4>注意:</h4>
+由运行结果可以看出，生产者比消费者快 100 倍。使用 1000个缓冲来处理这种消费者比较慢的情况。当消费者消费 11个数据的时候，缓冲区满了，生产者生产了 1100个数据，数据流就抛出异常了。
+<h5>
+</h5>
+</body>
+</html>
+</html>
+</script>
+</html>

@@ -1,0 +1,23 @@
+Observable.just("A", "B", "C", "D", "E")
+.switchMap(
+  new Func1<String, Observable<String>>() {
+  @Override
+  public Observable<String> call(String s) {
+    Observable<String> ob = Observable.just(s);
+    return ob;
+   }
+}).subscribeOn(AndroidSchedulers.mainThread())
+  .subscribe(new Observer<String>() {
+    @Override
+    public void onCompleted() {
+       println("------>onCompleted()");
+    }
+    @Override
+    public void onError(Throwable e) {
+      println("------>onError()" + e);
+}
+    @Override
+    public void onNext(String s) {
+      println("------>onNext:" + s);
+    }
+});

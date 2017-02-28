@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Hello SyntaxHighlighter</title>
+    <link href="prettify.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="prettify.js"></script>
+<script src="jquery-1.12.3.min.js"></script>
+<link href="../../rtf/txt.css" type="text/css" rel="stylesheet"/>
+</head>
+<body style="background: white; font-family: Helvetica">
+<h3 id="title" align = center>Refcount操作符</h3>
+<h4>作用:</h4>
+<h5>
+    RefCount操作符可以看做是Publish的逆向，
+    它能将一个ConnectableObservable对象再重新转化为一个普通的Observable对象，
+    如果转化后有订阅者对其进行订阅将会开始发射数据，后面如果有其他订阅者订阅，
+    将只能接受后面的数据（这也是转化之后的Observable 与普通的Observable的一点区别 ）。
+    还有一个操作符叫share，它的作用等价于对一个Observable同时应用publish和refCount操作。
+</h5>
+<h4>要点:</h4>
+<h5>
+</h5>
+<h4>注意:</h4>
+注意：如果一个ConnectableObservable已经开始发射数据，再对其进行订阅只能接受之后发射的数据，订阅之前已经发射过的数据就丢失了。
+<h5>
+</h5>
+</body>
+</html>

@@ -1,0 +1,6 @@
+Publish 操作符将普通的Observable转换为可连接的Observable（ConnectableObservable），
+ConnectableObservable是Observable的子类。
+可连接的Observable (connectable Observable)与普通的Observable差不多，
+不过它并不会在被订阅时开始发射数据，而是直到使用了Connect操作符时才会开始，
+这样可以更灵活的控制发射数据的时机。
+注意：如果一个ConnectableObservable已经开始发射数据，再对其进行订阅只能接受之后发射的数据，订阅之前已经发射过的数据就丢失了。

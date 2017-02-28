@@ -1,0 +1,18 @@
+Observable
+.just(0,1)
+.defaultIfEmpty(0)
+.subscribe(new Observer<Integer>() {
+ @Override
+ public void onCompleted() {
+  println("-------->onCompleted()");
+ }
+ @Override
+public void onError(Throwable e) {
+ println("-------->onError()" + e);
+}
+
+ @Override
+ public void onNext(Integer i) {
+  println("-------->onNext()" + i);
+ }
+});

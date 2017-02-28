@@ -1,0 +1,19 @@
+Observable.defer
+(new Func0<Observable<Object>>() {
+  @Override
+  public Observable call() {
+     println("on defer");
+     return Observable.just(0);
+  }
+}).subscribe(new Subscriber<Object>() {
+  @Override
+  public void onCompleted() {
+   println("onCompleted");
+}
+  @Override
+  public void onError(Throwable e) {}
+  @Override
+  public void onNext(Object o) {
+   println("onNext:"+o);
+  }
+});

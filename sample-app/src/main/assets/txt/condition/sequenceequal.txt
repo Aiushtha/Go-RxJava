@@ -1,0 +1,10 @@
+Observable
+.sequenceEqual(
+ Observable.just("A","B")
+,Observable.just("A","B"))
+.subscribe(new Action1<Boolean>() {
+ @Override
+ public void call(Boolean aBoolean) {
+  println(aBoolean);
+ }
+});

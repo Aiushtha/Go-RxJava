@@ -1,0 +1,21 @@
+Observable.create(new Observable.OnSubscribe<Integer>() {
+ @Override
+ public void call(Subscriber<? super Integer> subscriber) {
+  subscriber.onNext(1);
+  subscriber.onCompleted();
+ }
+}).subscribeOn(Schedulers.io())  // 在doOnSubscribe()之前，不会影响上面的doOnSubscribe()
+ .doOnCompleted(new Action0() {
+ @Override
+ public void call() {
+  println(Thread.currentThread().getName());
+ }
+})
+ .subscribeOn(Schedulers.newThread())
+ .subscribe(new Observer<Integer>() {
+ .subscribe(new Action1<Integer>() {
+  @Override
+  public void call(Integer integer) {
+   println(Thread.currentThread().getName());
+  }
+});

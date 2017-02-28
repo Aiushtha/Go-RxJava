@@ -1,0 +1,57 @@
+ Observable.never()
+.subscribe(new Subscriber<Object>() {
+
+    @Override
+    public void onCompleted() {
+println("never Completed");
+    }
+
+    @Override
+    public void onError(Throwable e) {
+println("never error");
+    }
+
+    @Override
+    public void onNext(Object o) {
+println("never next");
+    }
+});
+;
+
+Observable.empty()
+.subscribe(new Subscriber<Object>() {
+
+    @Override
+    public void onCompleted() {
+println("empty Completed");
+    }
+
+    @Override
+    public void onError(Throwable e) {
+println("empty error");
+    }
+
+    @Override
+    public void onNext(Object o) {
+println("empty next");
+    }
+});
+;
+Observable.error(new RuntimeException("error"))
+.subscribe(new Subscriber<Object>() {
+
+    @Override
+    public void onCompleted() {
+println("error Completed");
+    }
+
+    @Override
+    public void onError(Throwable e) {
+println("error error");
+    }
+
+    @Override
+    public void onNext(Object o) {
+println("error next");
+    }
+});

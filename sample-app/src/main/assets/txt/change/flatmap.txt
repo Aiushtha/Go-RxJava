@@ -1,0 +1,15 @@
+Observable.range(0,8)
+.flatMap(new Func1<Integer, Observable<String>>() {
+  @Override
+  public Observable<String> call(Integer integer) {
+  if(integer>5)
+  return Observable.just(""+integer);
+  return null;
+}
+})
+.subscribe(new Action1<String>() {
+  @Override
+  public void call(String s) {
+     println(s);
+  }
+});

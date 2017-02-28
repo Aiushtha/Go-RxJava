@@ -1,0 +1,41 @@
+do操作符就是给Observable的生命周期的各个阶段加上一系列的回调监听，
+当Observable执行到这个阶段的时候，这些回调就会被触发。
+在Rxjava实现了很多的doxxx操作符。
+
+Observable.create(new Observable.OnSubscribe<Integer>() {
+@Override
+public void call(Subscriber<? super Integer> subscriber) {
+ subscriber.onNext(1);
+ subscriber.onNext(2);
+ subscriber.onCompleted();
+}
+})
+// 在doOnSubscribe()之前，不会影响上面的doOnSubscribe()
+.subscribeOn(Schedulers.io())
+.doOnEach(new Action1<Notification<? super Integer>>() {
+ @Override
+ public void call(Notification<? super Integer> notification) {
+  println("doOnEach:" + Thread.currentThread().getName());
+ }
+})
+.doOnNext(new Action1<Integer>() {
+ @Override
+ public void call(Integer integer) {
+ println("doOnNext:" + Thread.currentThread().getName());}
+})
+.subscribeOn(AndroidSchedulers.mainThread())
+.doOnCompleted(new Action0() {
+ @Override
+ public void call() {
+  println(Thread.currentThread().getName());
+}
+})
+// 会影响上面的doOnSubscribe()
+.subscribeOn(Schedulers.newThread())
+.subscribe(new Observer<Integer>() {
+.subscribe(new Action1<Integer>() {
+ @Override
+ public void call(Integer integer) {
+  println(Thread.currentThread().getName());
+ }
+});

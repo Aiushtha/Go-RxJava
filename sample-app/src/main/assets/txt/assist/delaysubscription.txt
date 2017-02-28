@@ -1,0 +1,31 @@
+final long time=System.currentTimeMillis();
+Observable.create(new Observable.OnSubscribe<Integer>() {
+@Override
+ public void call(Subscriber<? super Integer> subscriber) {
+  for (int i = 1; i <= 10; i++) {
+  subscriber.onNext((int)((System.currentTimeMillis()-time)/1000));
+      try {
+        Thread.sleep(1000);
+      } catch (InterruptedException e) {
+        e.printStackTrace();
+      }
+  }
+}
+})
+ .subscribeOn(Schedulers.newThread())
+ .delaySubscription(2, TimeUnit.SECONDS,
+ AndroidSchedulers.mainThread())
+ .subscribe(new Observer<Integer>() {
+ @Override
+ public void onCompleted() {
+  println("------>onCompleted()");
+ }
+ @Override
+ public void onError(Throwable e) {
+  println("------>onError()" + e);
+ }
+ @Override
+ public void onNext(Integer integer) {
+  println("------->onNext()"+integer+"秒");
+ }
+});

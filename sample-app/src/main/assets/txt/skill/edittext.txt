@@ -1,0 +1,43 @@
+private EditText editText;
+class SomeOnSubscribe implements Observable.OnSubscribe<Object>{
+ @Override
+ public void call(final Subscriber<? super Object> subscriber) {
+ println("SomeOnSubscribe is call");
+ final TextWatcher watcher = new TextWatcher() {
+ @Override public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+ }
+ @Override public void onTextChanged(CharSequence s, int start, int before, int count) {
+ if (!subscriber.isUnsubscribed()) {
+  subscriber.onNext(editText.getText().toString());
+ }
+}
+@Override public void afterTextChanged(Editable s) {
+ }
+};
+ editText.addTextChangedListener(watcher);
+ subscriber.add(new MainThreadSubscription() {
+ @Override protected void onUnsubscribe() {
+  editText.removeTextChangedListener(watcher);
+ }
+});
+ // Emit initial value.
+ subscriber.onNext(editText.getText().toString());
+ }
+}
+@Override
+ protected void init() {
+ super.init();
+ editText = new EditText(getActivity());
+ container.addView(editText);
+ Observable.create(new SomeOnSubscribe())
+ .debounce(600, TimeUnit.MILLISECONDS)
+ //ThrottleFirst操作符则会定期发射这个时间段里源Observable发射的第一个数据
+ .throttleFirst(1000,TimeUnit.MILLISECONDS)
+ .subscribe(new Action1<Object>() {
+ @Override
+ public void call(Object s) {
+  println("edit change:"+s);
+ }
+});
+;
+}

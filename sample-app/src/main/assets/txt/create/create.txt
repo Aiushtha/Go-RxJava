@@ -1,0 +1,29 @@
+Observable
+.create(new Observable
+.OnSubscribe<Object>() {
+  @Override
+  public void call(Subscriber<? super Object> subscriber) {
+      for (int i = 0; i < 10; i++) {
+        subscriber.onNext(i);
+      }
+      subscriber.onCompleted();
+      }
+  }).subscribe(new Subscriber<Object>() {
+
+     int sum;
+
+     @Override
+     public void onCompleted() {
+        println(String.valueOf(sum));
+     }
+     @Override
+     public void onError(Throwable e) {
+
+     }
+
+     @Override
+     public void onNext(Object o) {
+        sum += (int) o;
+        println(o.toString());
+     }
+  });

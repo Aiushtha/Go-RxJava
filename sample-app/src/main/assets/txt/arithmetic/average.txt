@@ -1,0 +1,16 @@
+MathObservable
+.averageInteger(Observable.just(1, 2, 3, 4))
+.subscribe(new Subscriber<Integer>() {
+ @Override
+ public void onCompleted() {
+  println("onCompleted.");
+ }
+ @Override
+ public void onError(Throwable e) {
+  println("onError: " + e.getMessage());
+}
+ @Override
+ public void onNext(Integer integer) {
+  println("onNext: " + integer);
+ }
+});

@@ -1,0 +1,42 @@
+Observable.create(new Observable.OnSubscribe<Integer>() {
+ @Override
+ public void call(Subscriber<? super Integer> subscriber) {
+  subscriber.onNext(0);
+  subscriber.onNext(1);
+  //这里报错了
+  subscriber.onError(new Throwable("do onError"));
+  subscriber.onNext(2);
+  subscriber.onNext(3);
+ }
+}).subscribeOn(Schedulers.io())
+ .onErrorResumeNext(new Func1<Throwable, Observable<Integer>>() {
+ @Override
+ public Observable<Integer> call(Throwable throwable) {
+  return Observable.create(new Observable.OnSubscribe<Integer>() {
+ @Override
+ public void call(Subscriber<? super Integer> subscriber) {
+  println("执行一些动作如--等待2秒");
+  try {
+   Thread.sleep(2000);
+  } catch (InterruptedException e) {
+   e.printStackTrace();
+  }
+  subscriber.onNext(-1);
+ }
+ }).subscribeOn(Schedulers.newThread());
+}
+ }).subscribe(new Observer<Object>() {
+ @Override
+ public void onCompleted() {
+  println("-------->onCompleted()"+Thread.currentThread());
+ }
+ @Override
+ public void onError(Throwable e) {
+  println("-------->onError()"+Thread.currentThread() + e);
+ }
+ @Override
+ public void onNext(Object obj) {
+  println("-------->onNext()"+Thread.currentThread() + obj);
+ }
+});
+}

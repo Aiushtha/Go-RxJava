@@ -1,0 +1,15 @@
+Observable
+.range(0, 5)
+.toList()
+.subscribe(new Observer<List<Integer>>() {
+ @Override
+ public void onCompleted() {
+  println("onCompleted");
+ }
+ @Override
+ public void onError(Throwable e) {}
+ @Override
+ public void onNext(List<Integer> i) {
+  println("onnext"+i);
+ }
+});

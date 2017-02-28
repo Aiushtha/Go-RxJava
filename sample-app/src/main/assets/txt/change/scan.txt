@@ -1,0 +1,20 @@
+Observable.range(0,8)
+.scan(new Func2<Integer, Integer, Integer>() {
+ @Override
+ public Integer call(Integer sum, Integer integer) {
+  println("sum:"+sum+" "+"int:"+integer);
+   return sum + integer;
+  }
+}).subscribe(new Observer<Integer>() {
+ @Override
+  public void onCompleted() {
+   println("------>onCompleted()");
+  }
+ @Override
+  public void onError(Throwable e) {
+   println("------>onError()" + e);
+  }
+ @Override
+  public void onNext(Integer integer) {
+   println("------>onNext()" + integer);
+}

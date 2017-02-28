@@ -1,0 +1,3 @@
+rootProject.name='rxandroid-root'
+
+include ':sample-app'

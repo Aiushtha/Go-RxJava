@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Hello SyntaxHighlighter</title>
+    <link href="prettify.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="prettify.js"></script>
+<script src="jquery-1.12.3.min.js"></script>
+<link href="../../rtf/txt.css" type="text/css" rel="stylesheet"/>
+</head>
+<body style="background: white; font-family: Helvetica">
+<h3 id="title" align = center>Publish操作符</h3>
+<h4>作用:</h4>
+<h5>
+    Publish 操作符将普通的Observable转换为可连接的Observable（ConnectableObservable），
+    ConnectableObservable是Observable的子类。
+    可连接的Observable (connectable Observable)与普通的Observable差不多，
+    不过它并不会在被订阅时开始发射数据，而是直到使用了Connect操作符时才会开始，
+    这样可以更灵活的控制发射数据的时机。
+</h5>
+<h4>要点:</h4>
+<h5>
+</h5>
+<h4>注意:</h4>
+注意：如果一个ConnectableObservable已经开始发射数据，再对其进行订阅只能接受之后发射的数据，订阅之前已经发射过的数据就丢失了。
+<h5>
+</h5>
+</body>
+</html>

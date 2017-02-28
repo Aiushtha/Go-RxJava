@@ -1,0 +1,15 @@
+Observable
+.timer(2, TimeUnit.SECONDS, Schedulers.io())
+.subscribe(new Observer<Long>() {
+ @Override
+ public void onCompleted() {
+   println(Thread.currentThread() + " " +
+   String.valueOf("onCompleted"));
+ }
+ @Override
+ public void onError(Throwable e) {}
+ @Override
+ public void onNext(Long aLong) {
+    println(aLong);
+ }
+});

@@ -1,0 +1,10 @@
+try {
+ Observable.error(new Throwable("呵呵哒")).doOnError(new Action1<Throwable>() {
+ @Override
+ public void call(Throwable throwable) {
+  println(throwable.getMessage().toString());
+ }
+ }).subscribe();
+}catch (Exception e){
+ println("catch the exception");
+}

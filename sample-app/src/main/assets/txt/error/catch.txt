@@ -1,0 +1,30 @@
+Observable.create(new Observable.OnSubscribe<Integer>() {
+ @Override
+ public void call(Subscriber<? super Integer> subscriber) {
+  subscriber.onNext(0);
+  subscriber.onNext(1);
+  //这里报错了
+  int k = 1 / 0;
+  subscriber.onNext(2);
+  subscriber.onNext(3);
+ }
+}).
+onErrorResumeNext(new Func1<Throwable, Observable<Integer>>() {
+ @Override
+ public Observable<Integer> call(Throwable throwable) {
+  return Observable.just(-1);
+ }
+}).subscribe(new Observer<Object>() {
+ @Override
+ public void onCompleted() {
+  println("-------->onCompleted()");
+ }
+ @Override
+ public void onError(Throwable e) {
+  println("-------->onError()" + e);
+ }
+ @Override
+ public void onNext(Object obj) {
+  println("-------->onNext()" + obj);
+ }
+});

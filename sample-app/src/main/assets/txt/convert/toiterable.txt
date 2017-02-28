@@ -1,0 +1,7 @@
+Iterator<Integer> it = Observable.range(0, 5)
+ .toBlocking()
+ .toIterable()
+ .iterator();
+ while (it.hasNext()) {
+ println(it.next());
+}

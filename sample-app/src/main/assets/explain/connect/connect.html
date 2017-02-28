@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Hello SyntaxHighlighter</title>
+    <link href="prettify.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="prettify.js"></script>
+<script src="jquery-1.12.3.min.js"></script>
+<link href="../../rtf/txt.css" type="text/css" rel="stylesheet"/>
+</head>
+<body style="background: white; font-family: Helvetica">
+<h3 id="title" align = center>Connect操作符</h3>
+<h4>作用:</h4>
+<h5>
+    可连接的Observable (connectable Observable)与普通的Observable差不多，
+    不过它并不会在被订阅时开始发射数据，而是直到使用了Connect操作符时才会开始。用这个方法，你可以等待所有的观察者都订阅了Observable之后再开始发射数据。
+
+    RxJava中connect是ConnectableObservable接口的一个方法，使用publish操作符可以将一个普通的Observable转换为一个ConnectableObservable。
+
+    调用ConnectableObservable的connect方法会让它后面的Observable开始给发射数据给订阅者。
+
+    connect方法返回一个Subscription对象，可以调用它的unsubscribe方法让Observable停止发射数据给观察者。
+
+    即使没有任何订阅者订阅它，你也可以使用connect方法让一个Observable开始发射数据（或者开始生成待发射的数据）。这样，你可以将一个”冷”的Observable变为”热”的。
+</h5>
+<h4>要点:</h4>
+<h5>
+</h5>
+<h4>注意:</h4>
+<h5>
+</h5>
+</body>
+</html>

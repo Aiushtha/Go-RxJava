@@ -1,0 +1,9 @@
+Observable.just(2,4,1,3)
+ .delaySubscription(1, TimeUnit.SECONDS)  //延迟5s订阅
+ .toSortedList()
+ .subscribe(new Action1<List<Integer>>() {
+ @Override
+ public void call(List<Integer> integers) {
+  println("toSortedList onNext:" + integers);
+ }
+});

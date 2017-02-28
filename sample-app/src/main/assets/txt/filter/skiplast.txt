@@ -1,0 +1,16 @@
+Observable.range(0,10)
+.skipLast(5)
+.subscribe(new Observer<Integer>() {
+ @Override
+ public void onCompleted() {
+  println("-------->onCompleted()");
+ }
+ @Override
+ public void onError(Throwable e) {
+  println("-------->onError()" + e);
+ }
+ @Override
+ public void onNext(Integer integer) {
+  println("-------->onNext()" + integer);
+ }
+});

@@ -1,0 +1,18 @@
+Observable
+.interval(100, TimeUnit.MILLISECONDS);
+.take(3)
+.timestamp()
+.subscribe(new Observer<Timestamped>() {
+ @Override
+ public void onCompleted() {
+  println("------>onCompleted()");
+ }
+ @Override
+ public void onError(Throwable e) {
+  println("------>onError()" + e);
+ }
+ @Override
+ public void onNext(Timestamped mTimestamped) {
+  println("------->onNext()"+mTimestamped);
+ }
+});

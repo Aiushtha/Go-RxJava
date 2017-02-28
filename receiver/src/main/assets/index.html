@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Hello SyntaxHighlighter</title>
+    <link href="prettify.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="prettify.js"></script>
+    <script src="jquery-1.12.3.min.js">
+    </script>
+
+</head>
+
+<body style="background: white; font-family: Helvetica">
+<h5 id="applicationId">[appId]</h5>
+<h5 id="createTime">[time]</h5>
+<h5 id="subject">[subject]</h5>
+<h5 id="id">[id]</h5>
+<h5 id="tag">[tag]</h5>
+<h5 id="level">[level]</h5>
+<h5 id="type">[type]</h5>
+<h5 id="src">[src]</h5>
+<h5>[url]</h5>
+<pre class="prettyprint" id="url"></pre>
+<h5>[content]</h5>
+<pre class="prettyprint" id="content"></pre>
+</body>
+
+<script>
+
+$(document).ready(function() {
+   $("#applicationId").hide();
+   $("#createTime").hide();
+   $("#subject").hide();
+   $("#id").hide();
+   $("#tag").hide();
+   $("#level").hide();
+   $("#type").hide();
+   $("#src").hide();
+   $("#url").hide();
+   $("#content").hide();
+});
+
+function applicationId(context)
+{
+   $("#applicationId").show();
+   document.getElementById("applicationId").innerHTML+=context;
+}
+function createTime(context)
+{
+   $("#createTime").show();
+   document.getElementById("createTime").innerHTML+=context;
+}
+function subject(context)
+{
+   $("#subject").show();
+   document.getElementById("subject").innerHTML+=context;
+}
+function id(context)
+{
+   $("#id").show();
+   document.getElementById("id").innerHTML+=context;
+}
+function tag(context)
+{
+   $("#tag").show();
+   document.getElementById("tag").innerHTML+=context;
+}
+function level(context)
+{
+   $("#level").show();
+   document.getElementById("level").innerHTML+=context;
+}
+function type(context)
+{
+   $("#type").show();
+   document.getElementById("type").innerHTML+=context;
+}
+function src(context)
+{
+   $("#src").show();
+   document.getElementById("src").innerHTML+=context;
+}
+function url(context)
+{
+   $("#url").show();
+   document.getElementById("url").innerHTML=context;
+   prettyPrint();
+}
+function content(context)
+{
+   $("#content").show();
+   document.getElementById("content").innerHTML=context;
+   prettyPrint();
+}
+
+
+
+</script>
+
+</html>

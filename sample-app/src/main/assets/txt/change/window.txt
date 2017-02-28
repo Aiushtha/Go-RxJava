@@ -1,0 +1,23 @@
+Observable.interval(1, TimeUnit.SECONDS)
+.take(10)
+.window(3,TimeUnit.SECONDS)
+.subscribe(new Observer<Observable<Long>>() {
+ @Override
+ public void onCompleted() {
+  println("onCompleted()");
+ }
+ @Override
+ public void onError(Throwable e) {
+  println("onError()" + e);
+ }
+ @Override
+ public void onNext(Observable<Long> integerObservable) {
+  println("onNext()");
+  integerObservable.subscribe(new Action1<Long>() {
+  @Override
+  public void call(Long integer) {
+   println("call():" + integer);
+  }
+ );
+}
+});

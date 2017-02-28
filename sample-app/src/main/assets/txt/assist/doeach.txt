@@ -1,0 +1,20 @@
+Observable.range(0, 4)
+ .doOnEach(new Action1<Notification<? super Integer>>() {
+ @Override
+ public void call(Notification<? super Integer> notification) {
+  println("" + notification.getValue() + " " + notification.getKind());
+ }
+}).subscribe(new Observer<Integer>() {
+ @Override
+ public void onCompleted() {
+  println("------>onCompleted()");
+ }
+ @Override
+ public void onError(Throwable e) {
+  println("------>onError()" + e);
+ }
+ @Override
+ public void onNext(Integer integer) {
+  println("------->onNext()");
+ }
+});

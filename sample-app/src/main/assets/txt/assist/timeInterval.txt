@@ -1,0 +1,10 @@
+Observable
+.interval(100, TimeUnit.MILLISECONDS);
+.take(3)
+.timeInterval()
+.subscribe(new Action1<TimeInterval>() {
+ @Override
+ public void call(TimeInterval mTimeInterval) {
+  println(mTimeInterval.toString());
+ }
+});

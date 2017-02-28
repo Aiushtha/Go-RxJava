@@ -1,0 +1,9 @@
+Observable observable = Observable.just("aa", "bb", "cc");
+    observable
+    .startWith("11", "22")
+    .subscribe(new Action1() {
+    @Override
+    public void call(Object o) {
+    println("startWith-- " + o);
+   }
+});

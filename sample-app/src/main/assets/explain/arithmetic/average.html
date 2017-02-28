@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Hello SyntaxHighlighter</title>
+    <link href="prettify.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="prettify.js"></script>
+<script src="jquery-1.12.3.min.js"></script>
+<link href="../../rtf/txt.css" type="text/css" rel="stylesheet"/>
+</head>
+<body style="background: white; font-family: Helvetica">
+<h3 id="title" align = center>Average作符</h3>
+<h4>作用:</h4>
+<h5>
+    计算原始Observable发射数字的平均值并发射它。
+    Average操作符操作符一个发射数字的Observable，并发射单个值：原始Observable发射的数字序列的平均值。
+    这个操作符不包含在RxJava核心模块中，它属于不同的rxjava-math模块。它被实现为四个操作符：averageDouble, averageFloat, averageInteger, averageLong。
+    如果原始Observable不发射任何数据，这个操作符会抛异常：IllegalArgumentException
+</h5>
+<h4>要点:</h4>
+<h5>
+</h5>
+<h4>注意:</h4>
+<h5>
+    由于average操作符是属于可选的rxjava-math模块的，所以需要加入下面的依赖：
+    compile 'io.reactivex:rxjava-math:1.0.0'
+</h5>
+</body>
+</html>

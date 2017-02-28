@@ -1,0 +1,21 @@
+Observable
+.range(0,4)
+.doOnTerminate(new Action0() {
+ @Override
+ public void call() {
+  println("------>doOnTerminate()");
+ }
+ }).subscribe(new Observer<Integer>() {
+ @Override
+ public void onCompleted() {
+  println("------>onCompleted()");
+}
+ @Override
+ public void onError(Throwable e) {
+  println("------>onError()" + e);
+ }
+ @Override
+ public void onNext(Integer integer) {
+  println("------->onNext()");
+}
+});

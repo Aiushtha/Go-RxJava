@@ -1,0 +1,17 @@
+Observable.concat(
+ Observable.just(1),
+ Observable.just(2),
+ Observable.just(3)
+).subscribe(
+new Observer<Integer>() {
+ @Override
+ public void onCompleted() {
+  println("onCompleted");
+ }
+ @Override
+ public void onError(Throwable e) {}
+ @Override
+ public void onNext(Integer i) {
+  println("onNext:" +i);
+ }
+});

@@ -1,0 +1,22 @@
+Observable.interval(1, TimeUnit.MILLISECONDS)
+ .onBackpressureDrop()
+ .observeOn(Schedulers.newThread())
+ .subscribe(new Subscriber<Long>() {
+ @Override
+ public void onCompleted() {
+  System.out.println("onCompleted.");
+ }
+ @Override
+ public void onError(Throwable e) {
+  System.out.println("onError: " + e.getMessage());
+ }
+ @Override
+ public void onNext(Long aLong) {
+  System.out.println("onNext: " + aLong);
+  try {
+   Thread.sleep(100);
+  } catch (InterruptedException e) {
+   e.printStackTrace();
+  }
+ }
+});

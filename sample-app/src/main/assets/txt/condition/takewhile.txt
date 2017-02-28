@@ -1,0 +1,22 @@
+Observable.interval(1, TimeUnit.SECONDS)
+.takeWhile(new Func1<Long, Boolean>() {
+@Override
+public Boolean call(Long aLong) {
+ if (aLong < 5) return true;
+ return false;
+}
+})
+.subscribe(new Observer<Long>() {
+ @Override
+ public void onCompleted() {
+  println("------>onCompleted()");
+ }
+ @Override
+ public void onError(Throwable e) {
+  println("------>onError()" + e);
+ }
+ @Override
+ public void onNext(Long along) {
+  println("------->onNext()"+along);
+ }
+});

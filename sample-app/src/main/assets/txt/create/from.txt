@@ -1,0 +1,8 @@
+Integer[] arr = {1, 2, 3, 4};
+Observable.from(arr)
+.subscribe(new Observable.OnSubscribe() {
+  @Override
+  public void call(Object o) {
+   println(o);
+  }
+});

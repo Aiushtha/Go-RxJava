@@ -1,0 +1,10 @@
+Observable observable = Observable.just(1, 2).doOnUnsubscribe(new Action0() {
+ @Override
+ public void call() {
+  println("I'm be unSubscribed!");
+ }
+});
+Subscription subscribe1 = observable.subscribe();
+Subscription subscribe2 = observable.subscribe();
+subscribe1.unsubscribe();
+subscribe2.unsubscribe();

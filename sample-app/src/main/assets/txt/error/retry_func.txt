@@ -1,0 +1,38 @@
+public int k=0;
+public void runCode() {
+Observable.create(new Observable.OnSubscribe<Integer>() {
+ @Override
+ public void call(Subscriber<? super Integer> subscriber) {
+  subscriber.onNext(0);
+  subscriber.onNext(1);
+  k++;
+  if(k<=5) {
+  //这里报错了
+  subscriber.onError(new Throwable("do onError"));
+ }
+ subscriber.onNext(2);
+ subscriber.onNext(3);
+}
+})
+.retry(new Func2<Integer, Throwable, Boolean>() {
+ @Override
+ public Boolean call(Integer integer, Throwable throwable) {
+  println(integer);
+  if(k==4){return false;}
+  return true;
+  }
+}).subscribe(new Observer<Object>() {
+ @Override
+ public void onCompleted() {
+  println("-------->onCompleted()");
+ }
+ @Override
+ public void onError(Throwable e) {
+  println("-------->onError()" + e);
+ }
+ @Override
+ public void onNext(Object obj) {
+  println("-------->onNext()" + obj);
+ }
+});
+}

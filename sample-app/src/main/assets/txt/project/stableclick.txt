@@ -1,0 +1,8 @@
+RxView.clicks(btn_submit)
+ .throttleFirst(2, TimeUnit.SECONDS)
+ .subscribe(new Action1<Void>() {
+ @Override
+ public void call(Void aVoid) {
+  println("click");
+ }
+});

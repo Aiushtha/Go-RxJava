@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="translucent_background">#60000000</color>
+    <color name="colorPrimary">#7e5661</color>
+    <color name="colorPrimaryDark">#7b5f68</color>
+    <color name="colorAccent">#7c6e86</color>
+
+    <color name="red">#f7020e</color>
+    <color name="black">#7c6e86</color>
+    <color name="white">#fdfdfd</color>
+</resources>
