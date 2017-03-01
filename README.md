@@ -1,6 +1,6 @@
 # Go-RxJAVA: RXJava学习练习之作
-[RxJava](http://github.com/ReactiveX/RxJava).
-[参考](https://www.gitbook.com/book/mcxiaoke/rxdocs/details).
+[RxJava](http://github.com/ReactiveX/RxJava).</br>
+[参考](https://www.gitbook.com/book/mcxiaoke/rxdocs/details).</br>
 
 
 <a href='https://travis-ci.org/ReactiveX/RxAndroid/builds'><img src='https://api.travis-ci.org/ReactiveX/RxAndroid.svg?branch=1.x'></a>
