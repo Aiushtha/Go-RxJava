@@ -1036,7 +1036,7 @@
         "text": "RxBinding防止触摸",
         "clazz": "rx.android.samples.demo.library.RxBinding_StableClick",
         "link": "",
-        "explain": "file:///android_asset/explain/create.html",
+        "explain": "file:///android_asset/explain/libary/stableclick.html",
         "children": []
       },
       {
@@ -1053,8 +1053,17 @@
         "treeDepth": 1,
         "text": "RxBinding_Rxlifecycle计时器绑定生命周期",
         "clazz": "rx.android.samples.demo.library.RxBinding_Rxlifecycle",
-        "link": "txt/project/debounce.txt",
+        "link": "txt/libary/debounce.txt",
         "explain": "file:///android_asset/explain/project/rxlifecycle.html",
+        "children": []
+      },
+      {
+        "type": 1,
+        "treeDepth": 1,
+        "text": "android 6.0权限 RxPermissions",
+        "clazz": "rx.android.samples.demo.library.RxPermissions_Demo",
+        "link": "txt/library/rxpermissions.txt",
+        "explain": "file:///android_asset/explain/library/rxpermissions.html",
         "children": []
       }
     ]
