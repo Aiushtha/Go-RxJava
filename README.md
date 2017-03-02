@@ -10,10 +10,11 @@
 [ReactiveX文档中文翻译](https://www.gitbook.com/book/mcxiaoke/rxdocs/details).</br>
 [rx-preference](https://github.com/f2prateek/rx-preferences).</br>
 
-![image](http://aiushtha-image.stor.sinaapp.com/rxjava-git/1.png)
-![image](http://aiushtha-image.stor.sinaapp.com/rxjava-git/2.png)
-![image](http://aiushtha-image.stor.sinaapp.com/rxjava-git/3.png)
-![image](http://aiushtha-image.stor.sinaapp.com/rxjava-git/4.png)
+以下为app视图
+[image](http://aiushtha-image.stor.sinaapp.com/rxjava-git/1.png)
+[image](http://aiushtha-image.stor.sinaapp.com/rxjava-git/2.png)
+[image](http://aiushtha-image.stor.sinaapp.com/rxjava-git/3.png)
+[image](http://aiushtha-image.stor.sinaapp.com/rxjava-git/4.png)
 
 
  [list]: http://groups.google.com/d/forum/rxjava
