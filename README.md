@@ -8,7 +8,7 @@
 参考以下链接
 [RxJava](http://github.com/ReactiveX/RxJava).</br>
 [ReactiveX文档中文翻译](https://www.gitbook.com/book/mcxiaoke/rxdocs/details).</br>
-[rx-preference]
+[rx-preference](https://github.com/f2prateek/rx-preferences).</br>
 
 ![image](http://aiushtha-image.stor.sinaapp.com/rxjava-git/1.png)
 ![image](http://aiushtha-image.stor.sinaapp.com/rxjava-git/2.png)
