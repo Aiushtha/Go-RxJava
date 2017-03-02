@@ -1022,6 +1022,15 @@
         "link": "txt/skill/merge.txt",
         "explain": "file:///android_asset/explain/skill/merge.html",
         "children": []
+      },
+      {
+        "type": 1,
+        "treeDepth": 2,
+        "text": "不破坏链式结构Compose关键字技巧",
+        "clazz": "rx.android.samples.demo.skill.Fragment_Compose_Demo",
+        "link": "txt/skill/merge.txt",
+        "explain": "file:///android_asset/explain/skill/merge.html",
+        "children": []
       }
     ]
   },
@@ -1064,6 +1073,15 @@
         "clazz": "rx.android.samples.demo.library.RxPermissions_Demo",
         "link": "txt/library/rxpermissions.txt",
         "explain": "file:///android_asset/explain/library/rxpermissions.html",
+        "children": []
+      },
+      {
+        "type": 1,
+        "treeDepth": 1,
+        "text": "绑定控件的RxPreferences",
+        "clazz": "rx.android.samples.demo.library.RxPreferences_Demo",
+        "link": "txt/library/rxpreferences",
+        "explain": "file:///android_asset/explain/library/rxpreferences.html",
         "children": []
       }
     ]

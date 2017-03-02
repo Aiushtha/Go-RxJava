@@ -1,58 +1,58 @@
 private SurfaceView surfaceView;
 public Camera camera;
 public String TAG = this.getClass().getSimpleName();
+
 @Override
 public View onCreateView(LayoutInflater inflater, ViewGroup group, Bundle savedInstanceState) {
  View view = inflater.inflate(R.layout.fragment_rxpermissions, null);
  RxPermissions rxPermissions = new RxPermissions(getActivity());
  rxPermissions.setLogging(true);
  surfaceView = (SurfaceView) view.findViewById(R.id.surfaceView);
- RxView.clicks(view.findViewById(R.id.enableCamera))
+ RxView
+ .clicks(view.findViewById(R.id.enableCamera))
  .compose(rxPermissions.ensureEach(Manifest.permission.CAMERA))
- .subscribe(new Action1() {
- @Override
- public void call(Permission permission) {
- Log.i(TAG, "Permission result " + permission);
- if (permission.granted) {
- releaseCamera();
- camera = Camera.open(0);
-  try {
-   camera.setPreviewDisplay(surfaceView.getHolder());
-   camera.startPreview();
-  } catch (IOException e) {
-   Log.e(TAG, "Error while trying to display the camera preview", e);
-  }
- } else if (permission.shouldShowRequestPermissionRationale) {
-   Toast.makeText(getActivity(),
-    "Denied permission without ask never again",Toast.LENGTH_SHORT
-   ).show();
- } else {
-   Toast.makeText(getActivity(),
-   "Permission denied, can't enable the camera",Toast.LENGTH_SHORT
-   ).show();}}},
-
- new Action1() {
- @Override
- public void call(Throwable t) {
-  Log.e(TAG, "onError", t);
- }
-},
-  new Action0() {
+ .subscribe(new Action1<Permission>() {
+     @Override
+     public void call(Permission permission) {
+         Log.i(TAG, "Permission result " + permission);
+         if (permission.granted) {
+             releaseCamera();
+             camera = Camera.open(0);
+             try {
+                 camera.setPreviewDisplay(surfaceView.getHolder());
+                 camera.startPreview();
+             } catch (IOException e) {
+                 Log.e(TAG, "Error while trying to display the camera preview", e);
+             }
+         } else if (permission.shouldShowRequestPermissionRationale) {
+             Toast.makeText(getActivity(),"...",Toast.LENGTH_SHORT).show();
+         } else {
+             Toast.makeText(getActivity(),"...",Toast.LENGTH_SHORT).show();
+         }
+     }
+ },
+ new Action1<Throwable>() {
   @Override
-  public void call() {
-   Log.i(TAG, "OnComplete");
-   }
-  });
- return view;
-}
- @Override
- public void onStop() {
-  super.onStop();
-  releaseCamera();
+  public void call(Throwable t) {
+      Log.e(TAG, "onError", t);
+  }
+ },
+ new Action0() {
+  @Override
+ public void call() {
+  Log.i(TAG, "OnComplete");
  }
- private void releaseCamera() {
+});
+  return view;
+}
+@Override
+public void onStop() {
+ super.onStop();
+ releaseCamera();
+}
+private void releaseCamera() {
  if (camera != null) {
-  camera.release();
-  camera = null;
+ camera.release();
+ camera = null;
  }
 }
