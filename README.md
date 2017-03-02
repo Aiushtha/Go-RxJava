@@ -7,6 +7,11 @@
 [ReactiveX文档中文翻译](https://www.gitbook.com/book/mcxiaoke/rxdocs/details).</br>
 [rx-preference]
 
+[image](http://aiushtha-image.stor.sinaapp.com/Screenshot_2017-03-02-16-23-59.png)
+[image](http://aiushtha-image.stor.sinaapp.com/Screenshot_2017-03-02-16-25-24.png)
+[image](http://aiushtha-image.stor.sinaapp.com/Screenshot_2017-03-02-16-25-38.png)
+[image](http://aiushtha-image.stor.sinaapp.com/Screenshot_2017-03-02-16-34-01.png)
+
 <img src='http://aiushtha-image.stor.sinaapp.com/Screenshot_2017-03-02-16-23-59.png'/>
 <img src='http://aiushtha-image.stor.sinaapp.com/Screenshot_2017-03-02-16-25-24.png'/>
 <img src='http://aiushtha-image.stor.sinaapp.com/Screenshot_2017-03-02-16-25-38.png'/>
