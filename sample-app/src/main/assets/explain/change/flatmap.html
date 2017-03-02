@@ -10,15 +10,17 @@
 <link href="../../rtf/txt.css" type="text/css" rel="stylesheet"/>
 </head>
 <body style="background: white; font-family: Helvetica">
-<h3 id="title" align = center>Buffer作符</h3>
+<h3 id="title" align = center>FlatMap操作符</h3>
 <h4>作用:</h4>
 <h5>
-    扁平映射，将Observable发射的数据变换为Observables集合，然后将这些Observable发射的数据平坦化的放进一个单独的Observable，可以认为是一个将嵌套的数据结构展开的过程。
+    对Observable发射的数据都应用(apply)一个函数，这个函数返回一个Observable，然后合并这些Observables，并且发送（emit）合并的结果。 flatMap和map操作符很相像，flatMap发送的是合并后的Observables，map操作符发送的是应用函数后返回的结果集
 </h5>
 <h4>要点:</h4>
 <h5>
 </h5>
 <h4>注意:</h4>
+<h5>
+   如果在func1中返回null将过滤掉null值不再发射
 <h5>
 </h5>
 </body>

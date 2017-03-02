@@ -7,8 +7,10 @@
 [ReactiveX文档中文翻译](https://www.gitbook.com/book/mcxiaoke/rxdocs/details).</br>
 [rx-preference]
 
-<a href='https://travis-ci.org/ReactiveX/RxAndroid/builds'><img src='https://api.travis-ci.org/ReactiveX/RxAndroid.svg?branch=1.x'></a>
-
+<img src='http://aiushtha-image.stor.sinaapp.com/Screenshot_2017-03-02-16-23-59.png'/>
+<img src='http://aiushtha-image.stor.sinaapp.com/Screenshot_2017-03-02-16-25-24.png'/>
+<img src='http://aiushtha-image.stor.sinaapp.com/Screenshot_2017-03-02-16-25-38.png'/>
+<img src='http://aiushtha-image.stor.sinaapp.com/Screenshot_2017-03-02-16-34-01.png'/>
 
  [list]: http://groups.google.com/d/forum/rxjava
  [so]: http://stackoverflow.com/questions/tagged/rx-android
