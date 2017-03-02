@@ -11,10 +11,10 @@
 [rx-preference](https://github.com/f2prateek/rx-preferences).</br>
 
 以下为app视图
-[image](http://aiushtha-image.stor.sinaapp.com/rxjava-git/1.png)
-[image](http://aiushtha-image.stor.sinaapp.com/rxjava-git/2.png)
-[image](http://aiushtha-image.stor.sinaapp.com/rxjava-git/3.png)
-[image](http://aiushtha-image.stor.sinaapp.com/rxjava-git/4.png)
+![image](https://github.com/Aiushtha/Go-RxJava/screenshots/1.png)
+![image](https://github.com/Aiushtha/Go-RxJava/screenshots/2.png)
+![image](https://github.com/Aiushtha/Go-RxJava/screenshots/3.png)
+![image](https://github.com/Aiushtha/Go-RxJava/screenshots/4.png)
 
 
  [list]: http://groups.google.com/d/forum/rxjava
