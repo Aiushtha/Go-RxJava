@@ -17,7 +17,8 @@ public class Fragment_Do extends BaseFragment {
 
     public void runCode() {
 
-        http://blog.chinaunix.net/uid-20771867-id-5206187.html
+//        http:
+//blog.chinaunix.net/uid-20771867-id-5206187.html
         Observable.create(new Observable.OnSubscribe<Integer>() {
 
             @Override
@@ -38,12 +39,18 @@ public class Fragment_Do extends BaseFragment {
             public void call(Integer integer) {
                 println("doOnNext:" + Thread.currentThread().getName());
             }
-                })
+        })
                 .subscribeOn(AndroidSchedulers.mainThread())
                 .doOnCompleted(new Action0() {
                     @Override
                     public void call() {
-                        println(Thread.currentThread().getName());
+                        println("doOnCompleted1:" + Thread.currentThread().getName());
+                    }
+                })
+                .doOnCompleted(new Action0() {
+                    @Override
+                    public void call() {
+                        println("doOnCompleted2:" + Thread.currentThread().getName());
                     }
                 })
                 .subscribeOn(Schedulers.newThread()) // 会影响上面的doOnSubscribe()  .subscribe(new Observer<Integer>() {

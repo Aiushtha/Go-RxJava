@@ -542,6 +542,15 @@
           {
             "type": 1,
             "treeDepth": 2,
+            "text": "DoOnRequest操作符",
+            "clazz": "rx.android.samples.demo.assist.Fragment_DoOnRequest",
+            "link": "txt/assist/doonterminate.txt",
+            "explain": "file:///android_asset/explain/assist/doonterminate.html",
+            "children": []
+          },
+          {
+            "type": 1,
+            "treeDepth": 2,
             "text": "DoOnSubscribe操作符",
             "clazz": "rx.android.samples.demo.assist.Fragment_DoOnSubscribe",
             "link": "txt/assist/doonsubscribe.txt",
@@ -1028,6 +1037,24 @@
         "treeDepth": 2,
         "text": "不破坏链式结构Compose关键字技巧",
         "clazz": "rx.android.samples.demo.skill.Fragment_Compose_Demo",
+        "link": "txt/skill/merge.txt",
+        "explain": "file:///android_asset/explain/skill/merge.html",
+        "children": []
+      },
+      {
+        "type": 1,
+        "treeDepth": 2,
+        "text": "Compose实现代理模式",
+        "clazz": "rx.android.samples.demo.skill.Fragment_Compose_Proxy",
+        "link": "txt/skill/merge.txt",
+        "explain": "file:///android_asset/explain/skill/merge.html",
+        "children": []
+      },
+      {
+        "type": 1,
+        "treeDepth": 2,
+        "text": "Rxlifecycle原理示例",
+        "clazz": "rx.android.samples.demo.skill.Fragment_Compose_Rxlifecycle",
         "link": "txt/skill/merge.txt",
         "explain": "file:///android_asset/explain/skill/merge.html",
         "children": []
