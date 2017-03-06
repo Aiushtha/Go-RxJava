@@ -10,11 +10,11 @@
 <link href="../../rtf/txt.css" type="text/css" rel="stylesheet"/>
 </head>
 <body style="background: white; font-family: Helvetica">
-<h3 id="title" align = center>Contains操作符</h3>
+<h3 id="title" align = center>DefaultifEmpty操作符</h3>
 <h4>作用:</h4>
 <h5>
-    判断Observable是否会发射一个指定的数据项
-    Contains操作符用来判断源Observable所发射的数据是否包含某一个数据，如果包含会返回true，如果源Observable已经结束了却还没有发射这个数据则返回false。
+    发射来自原始Observable的数据，如果原始Observable没有发射数据，就发射一个默认数据
+    会判断源Observable是否发射数据，如果源Observable发射了数据则正常发射这些数据，如果没有则发射一个默认的数据
 </h5>
 <h4>要点:</h4>
 <h5>

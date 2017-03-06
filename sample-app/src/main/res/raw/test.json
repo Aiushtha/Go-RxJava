@@ -1,75 +1,9 @@
-[
-  {
-    "type": 0,
-    "treeDepth": 0,
-    "text": "RxJava常用操作符示例",
-    "children": [
-      {
-        "type": 0,
-        "treeDepth": 1,
-        "text": "创建操作符",
-        "children": [
-          {
-            "type": 1,
-            "treeDepth": 2,
-            "text": "Create操作符",
-            "clazz": "rx.android.samples.demo.Fragment_Create",
-            "link": "txt/create.txt",
-            "explain": "file:///android_asset/explain/create.html",
-            "children": []
-          },
-          {
-            "type": 1,
-            "treeDepth": 2,
-            "text": "Defer操作符",
-            "clazz": "rx.android.samples.demo.Fragment_Defer",
-            "link": "txt/create.txt",
-            "explain": "file:///android_asset/explain/create.html",
-            "children": []
-          }
-        ]
-      },
-      {
-        "type": 0,
-        "treeDepth": 1,
-        "text": "组合操作符",
-        "children": []
-      },
-      {
-        "type": 0,
-        "treeDepth": 1,
-        "text": "错误处理",
-        "children": []
-      },
-      {
-        "type": 0,
-        "treeDepth": 1,
-        "text": "辅助操作",
-        "children": []
-      },
-      {
-        "type": 0,
-        "treeDepth": 1,
-        "text": "条件布尔操作",
-        "children": []
-      }
-
-    ]
-  },
-  {
-    "type": 0,
-    "treeDepth": 0,
-    "text": "RxJava实战",
-    "children": [
-      {
-        "type": 1,
-        "treeDepth": 1,
-        "text": "FlatMap操作符",
-        "clazz": "rx.android.samples.demo.Fragment_FlatMap",
-        "link": "txt/filter.txt",
-        "explain": "file:///android_asset/explain/create.html",
-        "children": []
-      }
-    ]
-  }
-]
+{
+  "type": 1,
+  "treeDepth": 2,
+  "text": "分享",
+  "clazz": "rx.android.samples.demo.create.Fragment_Create",
+  "link": "txt/create/create.txt",
+  "explain": "https://www.gitbook.com/book/mcxiaoke/rxdocs/details",
+  "children": []
+}

@@ -10,20 +10,17 @@
 <link href="../../rtf/txt.css" type="text/css" rel="stylesheet"/>
 </head>
 <body style="background: white; font-family: Helvetica">
-<h3 id="title" align = center>ToIterable作符</h3>
+<h3 id="title" align = center>ToIterable操作符</h3>
 <h4>作用:</h4>
 <h5>
-    缓存，可以简单的理解为缓存，它定期从Observable收集数据到一个集合，然后把这些数据集合打包发射，而不是一次发射一个
+    转成迭代器(Iterable)
 </h5>
 <h4>要点:</h4>
 <h5>
-    buffer操作符的功能:
-    1：能一次性集齐多个结果到列表中，订阅后自动清空相应结果,直到完全清除
-    2： 也可以周期性的集齐多个结果到列表中，订阅后自动清空相应结果,直到完全清除
+
 </h5>
 <h4>注意:</h4>
 <h5>
-    当取消订阅时,计时器停止
 </h5>
 </body>
 </html>

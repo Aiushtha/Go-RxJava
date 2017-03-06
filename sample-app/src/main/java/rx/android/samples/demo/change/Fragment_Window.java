@@ -45,5 +45,5 @@ public class Fragment_Window extends BaseFragment {
 
     }
 
-
 }
+

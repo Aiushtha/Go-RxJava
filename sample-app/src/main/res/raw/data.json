@@ -544,7 +544,7 @@
             "treeDepth": 2,
             "text": "DoOnRequest操作符",
             "clazz": "rx.android.samples.demo.assist.Fragment_DoOnRequest",
-            "link": "txt/assist/doonterminate.txt",
+            "link": "txt/assist/doonrequest.txt",
             "explain": "file:///android_asset/explain/assist/doonterminate.html",
             "children": []
           },
@@ -981,7 +981,7 @@
       {
         "type": 1,
         "treeDepth": 2,
-        "text": "Debounce 搜索框防触发原理",
+        "text": "Debounce 搜索框缓冲原理",
         "clazz": "rx.android.samples.demo.skill.Fragment_DebounceOnEditText",
         "link": "txt/skill/edittext.txt",
         "explain": "file:///android_asset/explain/skill/edittext.html",
@@ -1058,6 +1058,24 @@
         "link": "txt/skill/merge.txt",
         "explain": "file:///android_asset/explain/skill/merge.html",
         "children": []
+      },
+      {
+        "type": 1,
+        "treeDepth": 2,
+        "text": "多线程合并数据并输出结果",
+        "clazz": "rx.android.samples.demo.skill.Fragment_Zip_Runnable",
+        "link": "txt/skill/zip_runnable.txt",
+        "explain": "file:///android_asset/explain/skill/zip_runnable.html",
+        "children": []
+      },
+      {
+        "type": 1,
+        "treeDepth": 2,
+        "text": "Rxjava-timeout超时",
+        "clazz": "rx.android.samples.demo.skill.Fragment_TimeOut",
+        "link": "txt/skill/zip_runnable.txt",
+        "explain": "file:///android_asset/explain/skill/zip_runnable.html",
+        "children": []
       }
     ]
   },
@@ -1071,17 +1089,17 @@
         "treeDepth": 1,
         "text": "RxBinding防止触摸",
         "clazz": "rx.android.samples.demo.library.RxBinding_StableClick",
-        "link": "",
-        "explain": "file:///android_asset/explain/libary/stableclick.html",
+        "link": "txt/libary/stableclick.txt",
+        "explain": "file:///android_asset/explain/library/stableclick.html",
         "children": []
       },
       {
         "type": 1,
         "treeDepth": 1,
-        "text": "RxBinding搜索框",
+        "text": "RXbinding搜索框缓冲",
         "clazz": "rx.android.samples.demo.library.RxBinding_StableSearch",
-        "link": "",
-        "explain": "file:///android_asset/explain/create.html",
+        "link": "txt/libary/stablesearch.txt",
+        "explain": "file:///android_asset/explain/library/stablesearch.html",
         "children": []
       },
       {
@@ -1089,8 +1107,8 @@
         "treeDepth": 1,
         "text": "RxBinding_Rxlifecycle计时器绑定生命周期",
         "clazz": "rx.android.samples.demo.library.RxBinding_Rxlifecycle",
-        "link": "txt/libary/debounce.txt",
-        "explain": "file:///android_asset/explain/project/rxlifecycle.html",
+        "link": "txt/libary/rxlifecycle.txt",
+        "explain": "file:///android_asset/explain/library/rxlifecycle.html",
         "children": []
       },
       {
@@ -1107,19 +1125,10 @@
         "treeDepth": 1,
         "text": "绑定控件的RxPreferences",
         "clazz": "rx.android.samples.demo.library.RxPreferences_Demo",
-        "link": "txt/library/rxpreferences",
+        "link": "txt/library/rxpreferences.txt",
         "explain": "file:///android_asset/explain/library/rxpreferences.html",
         "children": []
       }
     ]
-  },
-  {
-  "type": 1,
-  "treeDepth": 2,
-  "text": "分享",
-  "clazz": "rx.android.samples.demo.create.Fragment_Create",
-  "link": "txt/create/create.txt",
-  "explain": "https://www.gitbook.com/book/mcxiaoke/rxdocs/details",
-  "children": []
   }
 ]
