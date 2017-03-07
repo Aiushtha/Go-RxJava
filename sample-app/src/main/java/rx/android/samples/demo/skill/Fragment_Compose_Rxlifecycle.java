@@ -19,16 +19,9 @@ import rx.subjects.BehaviorSubject;
 
 public class Fragment_Compose_Rxlifecycle extends BaseFragment {
 
-    //BehaviorSubject订阅subscribe过程
-    //在需要使用subject时，调用Subject的subscribe(..)方法，
-    // 该方法实际会调用下面这个
-    // subscribe(Subscriber<? super T> subscriber)方法
-    //，所以其他的subscribe方法都要将输入参数转化为一个Subscriber对象。
 
     private final BehaviorSubject<String> lifecycleSubject = BehaviorSubject.create();
     private Button btn_pause;
-
-
 
     @Override
     protected void init() {
@@ -51,10 +44,8 @@ public class Fragment_Compose_Rxlifecycle extends BaseFragment {
             throw new IllegalArgumentException("Lifecycle must be given");
         }
 
-        //确保我们真的比较它的单一流
         // Make sure we're truly comparing a single stream to itself
         final Observable<R> sharedLifecycle = lifecycle.share();
-
         // Keep emitting from source until the corresponding event occurs in the lifecycle
         return new Observable.Transformer<T, T>() {
             @Override
@@ -93,7 +84,6 @@ public class Fragment_Compose_Rxlifecycle extends BaseFragment {
             }
         };
     }
-
 
     @Override
     public void runCode() {
@@ -139,22 +129,6 @@ public class Fragment_Compose_Rxlifecycle extends BaseFragment {
                         println("onnext:" + o);
                     }
                 });
-//                .subscribe(new Observer<String>() {
-//            @Override
-//            public void onCompleted() {
-//                println("onCompleted");
-//            }
-//
-//            @Override
-//            public void onError(Throwable e) {
-//                println("onnext:"+e);
-//            }
-//
-//            @Override
-//            public void onNext(String next) {
-//                println("onnext:"+next);
-//            }
-//        });
-//
+
     }
 }

@@ -1,0 +1,41 @@
+public Observable.Transformer waitTime(final long time) {
+ return new Observable.Transformer<Object, Object>() {
+  @Override
+  public Observable<Object> call(final Observable<Object> observable) {
+   return observable.flatMap(new Func1<Object, Observable<Object>>() {
+   @Override
+   public Observable<Object> call(Object integer) {
+    return Observable.timer(time,
+    TimeUnit.MILLISECONDS).flatMap(new Func1<Long, Observable<Object>>() {
+    @Override
+    public Observable<Object> call(Long aLong) {
+     return observable;
+    }
+   });
+   }
+  });
+ }
+ };
+}
+@Override
+public void runCode() {
+ super.runCode();
+ println(System.currentTimeMillis());
+ Observable.just("str")
+ .compose(waitTime(2000))
+ .subscribe(new Observer<String>() {
+  @Override
+  public void onCompleted() {
+   println("onCompleted");
+   println(System.currentTimeMillis());
+  }
+  @Override
+  public void onError(Throwable e) {
+   println("onnext:"+e);
+  }
+  @Override
+  public void onNext(String next) {
+   println("onnext:"+next);
+  }
+});
+}

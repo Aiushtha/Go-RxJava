@@ -10,11 +10,11 @@
     <link href="../../rtf/txt.css" type="text/css" rel="stylesheet"/>
 </head>
 <body style="background: white; font-family: Helvetica">
-<h3 id="title" align = center>多线程合并数据并输出结果</h3>
+<h3 id="title" align = center>Rxjava超时</h3>
 <h4>作用:</h4>
 <h5>
-    1:buffer操作符合并多个Observable,但是输出的结果按执行快慢的来分
-    1:Zip操作符合并多个Observable,输出的结果按顺序
+    1:用timeout方法来指定超时的时间,超过时间则报OnError错误
+    2:用amb关键字让2个A B业务竞争,如果A业务超时则执行B业务 达到超时执行代码的目的
 </h5>
 <h4>要点:</h4>
 <h5>

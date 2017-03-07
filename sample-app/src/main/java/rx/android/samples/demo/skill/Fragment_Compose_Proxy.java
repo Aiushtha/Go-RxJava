@@ -25,6 +25,7 @@ public class Fragment_Compose_Proxy extends BaseFragment {
     public Observable.Transformer createProgressDialog() {
         return new Observable.Transformer<Object, Object>() {
             ProgressDialog pd;
+
             @Override
             public Observable<Object> call(final Observable<Object> observable) {
 

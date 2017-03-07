@@ -1037,7 +1037,7 @@
         "treeDepth": 2,
         "text": "不破坏链式结构Compose关键字技巧",
         "clazz": "rx.android.samples.demo.skill.Fragment_Compose_Demo",
-        "link": "txt/skill/merge.txt",
+        "link": "txt/skill/compose_demo.txt",
         "explain": "file:///android_asset/explain/skill/merge.html",
         "children": []
       },
@@ -1046,8 +1046,8 @@
         "treeDepth": 2,
         "text": "Compose实现代理模式",
         "clazz": "rx.android.samples.demo.skill.Fragment_Compose_Proxy",
-        "link": "txt/skill/merge.txt",
-        "explain": "file:///android_asset/explain/skill/merge.html",
+        "link": "txt/skill/compose_proxy.txt",
+        "explain": "file:///android_asset/explain/skill/compose_proxy.html",
         "children": []
       },
       {
@@ -1055,8 +1055,8 @@
         "treeDepth": 2,
         "text": "Rxlifecycle原理示例",
         "clazz": "rx.android.samples.demo.skill.Fragment_Compose_Rxlifecycle",
-        "link": "txt/skill/merge.txt",
-        "explain": "file:///android_asset/explain/skill/merge.html",
+        "link": "txt/skill/compose_rxlifecycle.txt",
+        "explain": "file:///android_asset/explain/skill/compose_rxlifecycle.html",
         "children": []
       },
       {
@@ -1073,8 +1073,8 @@
         "treeDepth": 2,
         "text": "Rxjava-timeout超时",
         "clazz": "rx.android.samples.demo.skill.Fragment_TimeOut",
-        "link": "txt/skill/zip_runnable.txt",
-        "explain": "file:///android_asset/explain/skill/zip_runnable.html",
+        "link": "txt/skill/timeout.txt",
+        "explain": "file:///android_asset/explain/skill/timeout.html",
         "children": []
       }
     ]

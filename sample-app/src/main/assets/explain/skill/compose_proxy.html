@@ -10,21 +10,12 @@
     <link href="../../rtf/txt.css" type="text/css" rel="stylesheet"/>
 </head>
 <body style="background: white; font-family: Helvetica">
-<h3 id="title" align = center>RxJava实现三级缓存</h3>
+<h3 id="title" align = center>compose示例2</h3>
 <h4>作用:</h4>
-<br><h5>
-    通常我们需要从内存中->本地数据->以及网络中为关系,获取数据。(如图片缓存)
-    但无论哪一种我们可以用concat(连接操作符)和frist(过滤操作符)来实现
-    </br>
-    这个例子核心代码是
-    Observable.concat(
-     memory(),
-     localData(),
-     netWorkData()
-   ).first();
+<h5>
+    compose和do关键字配合,AOP编程,实现代理模式。
 </h5>
 <h4>要点:</h4>
-
 <h5>
 </h5>
 <h4>注意:</h4>

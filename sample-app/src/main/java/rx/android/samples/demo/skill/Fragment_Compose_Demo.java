@@ -19,7 +19,7 @@ public class Fragment_Compose_Demo extends BaseFragment {
         super.init();
 
     }
-    public Observable.Transformer timer(final long time) {
+    public Observable.Transformer waitTime(final long time) {
         return new Observable.Transformer<Object, Object>() {
             @Override
             public Observable<Object> call(final Observable<Object> observable) {
@@ -45,7 +45,7 @@ public class Fragment_Compose_Demo extends BaseFragment {
         super.runCode();
         println(System.currentTimeMillis());
         Observable.just("str")
-                .compose(timer(2000))
+                .compose(waitTime(2000))
                 .subscribe(new Observer<String>() {
             @Override
             public void onCompleted() {
