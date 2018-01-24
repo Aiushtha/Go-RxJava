@@ -1,13 +1,12 @@
 <component name="libraryTable">
-  <library name="rxpermissions-0.9.2">
+  <library name="com.tbruyelle.rxpermissions:rxpermissions-0.9.2">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/sample-app/build/intermediates/exploded-aar/com.tbruyelle.rxpermissions/rxpermissions/0.9.2/res" />
       <root url="jar://$PROJECT_DIR$/sample-app/build/intermediates/exploded-aar/com.tbruyelle.rxpermissions/rxpermissions/0.9.2/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/sample-app/build/intermediates/exploded-aar/com.tbruyelle.rxpermissions/rxpermissions/0.9.2/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tbruyelle.rxpermissions/rxpermissions/0.9.2/2fbd55d8c29341db5008826f6633037f6505aa0e/rxpermissions-0.9.2-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tbruyelle.rxpermissions2/rxpermissions/0.9.2/6d3ade6df85ce0373d8bdeeed1abf3c8c7b3a70/rxpermissions-0.9.2-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

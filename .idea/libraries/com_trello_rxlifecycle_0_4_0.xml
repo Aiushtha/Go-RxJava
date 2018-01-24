@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="rxlifecycle-0.4.0">
+  <library name="com.trello:rxlifecycle-0.4.0">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/sample-app/build/intermediates/exploded-aar/com.trello/rxlifecycle/0.4.0/res" />
       <root url="jar://$PROJECT_DIR$/sample-app/build/intermediates/exploded-aar/com.trello/rxlifecycle/0.4.0/jars/classes.jar!/" />

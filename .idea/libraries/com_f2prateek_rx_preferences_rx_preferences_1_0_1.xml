@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="rx-preferences-1.0.1">
+  <library name="com.f2prateek.rx.preferences:rx-preferences-1.0.1">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/sample-app/build/intermediates/exploded-aar/com.f2prateek.rx.preferences/rx-preferences/1.0.1/res" />
       <root url="jar://$PROJECT_DIR$/sample-app/build/intermediates/exploded-aar/com.f2prateek.rx.preferences/rx-preferences/1.0.1/jars/classes.jar!/" />

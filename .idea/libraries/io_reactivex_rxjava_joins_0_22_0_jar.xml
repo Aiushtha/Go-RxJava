@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="rxjava-joins-0.22.0">
+  <library name="io.reactivex:rxjava-joins:0.22.0@jar">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava-joins/0.22.0/658135e52e01650a74c276c6e61df276a5247da7/rxjava-joins-0.22.0.jar!/" />
     </CLASSES>

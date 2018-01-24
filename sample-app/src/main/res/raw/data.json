@@ -40,7 +40,7 @@
             "treeDepth": 2,
             "text": "Empty/Never/Throw操作符",
             "clazz": "rx.android.samples.demo.create.Fragment_Empty_Nerver_Throw",
-            "link": "txt/empty_never_throw.txt",
+            "link": "txt/create/empty_never_throw.txt",
             "explain": "file:///android_asset/explain/create/empty_never_throw.html",
             "children": []
           },
