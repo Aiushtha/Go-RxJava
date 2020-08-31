@@ -1,5 +1,13 @@
 apply plugin: 'com.android.application'
 
+
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'org.jetbrains.dokka'
 android {
 
     packagingOptions {
@@ -10,13 +18,20 @@ android {
         exclude 'META-INF/NOTICE.txt'
     }
 
-    compileSdkVersion 23
-    buildToolsVersion '23.0.1'
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 23
+        targetSdkVersion 28
         versionCode 1
         versionName '1.0'
+
+        javaCompileOptions {
+            // 显式声明支持注解
+            annotationProcessorOptions {
+                includeCompileClasspath false
+            }
+        }
     }
 
     lintOptions {
@@ -31,15 +46,16 @@ android {
 }
 
 dependencies {
+    implementation 'androidx.fragment:fragment:1.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
     //    compile project(':rxandroid')
     compile 'com.google.code.gson:gson:2.7'
     // Because RxAndroid releases are few and far between, it is recommended you also
     // explicitly depend on RxJava's latest version for bug fixes and new features.
     compile 'io.reactivex:rxjava:1.1.8'
-    compile 'com.android.support:recyclerview-v7:23.0.1'
     compile 'io.reactivex:rxjava-joins:0.22.0'
     compile 'com.jakewharton:butterknife:7.0.1'
-    compile 'com.android.support:appcompat-v7:23.2.0'
     compile 'io.reactivex:rxandroid:1.1.0'
     compile 'com.f2prateek.rx.preferences:rx-preferences:1.0.1'
     compile 'com.squareup.okhttp:okhttp:2.7.2'
@@ -57,4 +73,6 @@ dependencies {
     compile 'com.jakewharton.rxbinding:rxbinding:1.0.1'
     compile 'com.tbruyelle.rxpermissions:rxpermissions:0.9.2@aar'
 
+    implementation "androidx.appcompat:appcompat:$rootProject.appcompatVersion"
+    implementation "androidx.core:core-ktx:+"
 }

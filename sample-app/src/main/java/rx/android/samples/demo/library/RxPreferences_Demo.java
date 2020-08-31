@@ -42,6 +42,7 @@ public class RxPreferences_Demo extends BaseFragment {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
         RxSharedPreferences rxPreferences = RxSharedPreferences.create(preferences);
 
+
         //创建个人
         pre_username = rxPreferences.getString("username");
         pre_sex= rxPreferences.getBoolean("sex", true);

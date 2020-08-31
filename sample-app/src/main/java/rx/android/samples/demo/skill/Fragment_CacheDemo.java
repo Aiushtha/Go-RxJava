@@ -45,6 +45,12 @@ public class Fragment_CacheDemo extends BaseFragment {
 
     public String userId;
 
+    public void saveLocalData(String data)
+    {
+        SharedPreferences sp = getActivity().getSharedPreferences("data", Context.MODE_PRIVATE);
+        sp.edit().putString("userId",userId).commit();
+    }
+
     //从内存中获取数据
     public Observable<String> memory(){
         return Observable.create(new Observable.OnSubscribe<String>() {
@@ -70,11 +76,11 @@ public class Fragment_CacheDemo extends BaseFragment {
        return Observable.create(new Observable.OnSubscribe<String>() {
            @Override
            public void call(Subscriber<? super String> subscriber) {
+               println("local:"+Thread.currentThread());
                String data = getLocalData();
                if(data!=null)
                {
                    userId=data;
-                   println("local:"+Thread.currentThread());
                    subscriber.onNext(userId+" "+"source:local");
                    subscriber.onCompleted();
                }else {
@@ -87,11 +93,7 @@ public class Fragment_CacheDemo extends BaseFragment {
          .subscribeOn(Schedulers.io());
     };
 
-    public void saveLocalData(String data)
-    {
-        SharedPreferences sp = getActivity().getSharedPreferences("data", Context.MODE_PRIVATE);
-        sp.edit().putString("userId",userId).commit();
-    }
+
     public String getLocalData()
     {
         SharedPreferences sp = getActivity().getSharedPreferences("data", Context.MODE_PRIVATE);
@@ -126,8 +128,8 @@ public class Fragment_CacheDemo extends BaseFragment {
         return Observable.concat(
                 memory(),
                 localData(),
-                netWorkData()
-        ).first();
+                netWorkData());
+//        ).first();
     }
 
     public void runCode() {

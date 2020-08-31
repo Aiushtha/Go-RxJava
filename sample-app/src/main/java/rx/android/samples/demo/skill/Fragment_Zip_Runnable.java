@@ -36,6 +36,8 @@ public class Fragment_Zip_Runnable extends BaseFragment {
         });
     }
 
+
+
     public Observable<Integer> obs1() {
         return Observable.create(new Observable.OnSubscribe<Integer>() {
             @Override

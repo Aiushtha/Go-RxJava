@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/rxandroid-root.iml" filepath="$PROJECT_DIR$/rxandroid-root.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rxandroid-root.iml" filepath="$PROJECT_DIR$/rxandroid-root.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sample-app/sample-app.iml" filepath="$PROJECT_DIR$/sample-app/sample-app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sample-app/sample-app.iml" filepath="$PROJECT_DIR$/sample-app/sample-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxandroid-root.iml" filepath="$PROJECT_DIR$/rxandroid-root.iml" group="rxandroid-root" />
+      <module fileurl="file://$PROJECT_DIR$/sample-app/sample-app.iml" filepath="$PROJECT_DIR$/sample-app/sample-app.iml" group="rxandroid-root/sample-app" />
     </modules>
   </component>
 </project>

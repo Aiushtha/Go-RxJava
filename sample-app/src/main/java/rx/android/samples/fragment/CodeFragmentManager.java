@@ -16,8 +16,9 @@
 
 package rx.android.samples.fragment;
 
-import android.support.v4.app.Fragment;
 import android.widget.ImageView;
+
+import androidx.fragment.app.Fragment;
 
 import mobctrl.model.ItemData;
 
