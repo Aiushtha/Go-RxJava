@@ -10,7 +10,7 @@
 
 
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:clipToPadding="false"
         android:scrollbarStyle="outsideOverlay"
@@ -18,5 +18,5 @@
         android:layout_height="match_parent"
         android:listDivider="@null">
 
-    </android.support.v7.widget.RecyclerView>
+    </androidx.recyclerview.widget.RecyclerView>
 </RelativeLayout>
